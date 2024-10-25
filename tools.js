@@ -12,7 +12,8 @@ const tools = [
         "Processamento de múltiplos formatos de arquivo"
       ],
       tags: ["Análise de Documentos", "Automação"],
-      link: "https://www.humata.ai/"
+      link: "https://www.humata.ai/",
+      icon: "https://pbs.twimg.com/profile_images/1703895347393699840/KFLcQs1M_400x400.jpg"
     },
     {
       name: "Chatbase",
@@ -28,7 +29,8 @@ const tools = [
         "Sistema de feedback integrado"
       ],
       tags: ["Chatbots", "Atendimento"],
-      link: "https://www.chatbase.co/"
+      link: "https://www.chatbase.co/",
+      icon: "https://www.chatbase.co/images/chatbase-logo.svg"
     },
     {
       name: "Promptpal",
@@ -43,7 +45,8 @@ const tools = [
         "Personalização de prompts"
       ],
       tags: ["Prompts", "Automação"],
-      link: "#"
+      link: "https://www.promptpal.net/br",
+      icon: "https://cdn-1.webcatalog.io/catalog/promptpal/promptpal-icon-filled-256.webp?v=1714780825377"
     },
     {
       name: "ListenMonster",
@@ -58,7 +61,8 @@ const tools = [
         "Edição de transcrições"
       ],
       tags: ["Transcrição", "Áudio"],
-      link: "#"
+      link: "https://www.listenmonster.com/",
+      icon: "https://example.com/icons/listenmonster.png"
     },
     {
       name: "Ideogram",
@@ -73,7 +77,8 @@ const tools = [
         "Exportação em alta resolução"
       ],
       tags: ["Imagens", "Arte"],
-      link: "#"
+      link: "https://www.ideogram.com/",
+      icon: "https://example.com/icons/ideogram.png"
     },
     {
       name: "Magic Studio",
@@ -88,7 +93,8 @@ const tools = [
         "Geração de variações"
       ],
       tags: ["Imagens", "Automação"],
-      link: "#"
+      link: "https://www.magicstudio.com/",
+      icon: "https://example.com/icons/magicstudio.png"
     },
     {
       name: "Postwise",
@@ -103,7 +109,8 @@ const tools = [
         "Sugestões de conteúdo"
       ],
       tags: ["Redes Sociais", "Automação"],
-      link: "#"
+      link: "https://www.postwise.com/",
+      icon: "https://example.com/icons/postwise.png"
     },
     {
       name: "Midjourney",
@@ -118,7 +125,8 @@ const tools = [
         "Variações de imagens"
       ],
       tags: ["Arte", "Design"],
-      link: "#"
+      link: "https://www.midjourney.com/",
+      icon: "https://example.com/icons/midjourney.png"
     },
     {
       name: "ReplayMind",
@@ -133,7 +141,8 @@ const tools = [
         "Relatórios de engajamento"
       ],
       tags: ["Redes Sociais", "Automação"],
-      link: "#"
+      link: "https://www.replaymind.com/",
+      icon: "https://example.com/icons/replaymind.png"
     },
     {
       name: "Mubert",
@@ -148,7 +157,8 @@ const tools = [
         "Exportação em diversos formatos"
       ],
       tags: ["Música", "Áudio"],
-      link: "#"
+      link: "https://www.mubert.com/",
+      icon: "https://example.com/icons/mubert.png"
     },
     {
       name: "Adobe FireFly",
@@ -163,7 +173,8 @@ const tools = [
         "Efeitos especiais"
       ],
       tags: ["Imagens", "Design"],
-      link: "#"
+      link: "https://www.adobe.com/firefly",
+      icon: "https://example.com/icons/adobefirefly.png"
     },
     {
       name: "Supertools",
@@ -178,7 +189,8 @@ const tools = [
         "Automação de tarefas"
       ],
       tags: ["Automação", "Criação de Conteúdo"],
-      link: "#"
+      link: "https://www.supertools.com/",
+      icon: "https://example.com/icons/supertools.png"
     },
     {
       name: "OpenArt",
@@ -193,7 +205,8 @@ const tools = [
         "Exportação em alta qualidade"
       ],
       tags: ["Imagens", "Arte"],
-      link: "#"
+      link: "https://www.openart.com/",
+      icon: "https://example.com/icons/openart.png"
     },
     {
       name: "Rytr",
@@ -208,7 +221,8 @@ const tools = [
         "Templates prontos"
       ],
       tags: ["Escrita", "Automação"],
-      link: "#"
+      link: "https://www.rytr.me/",
+      icon: "https://example.com/icons/rytr.png"
     },
     {
       name: "ChatGPT",
@@ -223,7 +237,8 @@ const tools = [
         "Explicações didáticas"
       ],
       tags: ["Conversação", "Automação"],
-      link: "#"
+      link: "https://chat.openai.com/",
+      icon: "https://example.com/icons/chatgpt.png"
     },
     {
       name: "Claude",
@@ -238,7 +253,8 @@ const tools = [
         "Redação avançada"
       ],
       tags: ["Análise", "Automação"],
-      link: "#"
+      link: "https://www.anthropic.com/",
+      icon: "https://example.com/icons/claude.png"
     },
     {
       name: "Noor",
@@ -253,7 +269,8 @@ const tools = [
         "Transcrição fonética"
       ],
       tags: ["Linguística", "Automação"],
-      link: "#"
+      link: "https://www.noor.com/",
+      icon: "https://example.com/icons/noor.png"
     },
     {
       name: "Falcon",
@@ -268,7 +285,8 @@ const tools = [
         "Extração de informações"
       ],
       tags: ["Linguística", "Automação"],
-      link: "#"
+      link: "https://www.falcon.com/",
+      icon: "https://example.com/icons/falcon.png"
     },
     {
       name: "Runway",
@@ -283,7 +301,8 @@ const tools = [
         "Motion tracking"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "#"
+      link: "https://www.runwayml.com/",
+      icon: "https://example.com/icons/runway.png"
     },
     {
       name: "Clipdrop",
@@ -298,7 +317,8 @@ const tools = [
         "Edição em lote"
       ],
       tags: ["Imagens", "Design"],
-      link: "#"
+      link: "https://www.clipdrop.co/",
+      icon: "https://example.com/icons/clipdrop.png"
     },
     {
       name: "DreamStudio",
@@ -313,7 +333,8 @@ const tools = [
         "Controle de parâmetros"
       ],
       tags: ["Imagens", "Design"],
-      link: "#"
+      link: "https://www.dreamstudio.ai/",
+      icon: "https://example.com/icons/dreamstudio.png"
     },
     {
       name: "Ostagram",
@@ -328,7 +349,8 @@ const tools = [
         "Galeria de estilos"
       ],
       tags: ["Imagens", "Arte"],
-      link: "#"
+      link: "https://www.ostagram.me/",
+      icon: "https://example.com/icons/ostagram.png"
     },
     {
       name: "CapCut",
@@ -343,7 +365,8 @@ const tools = [
         "Templates prontos"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "#"
+      link: "https://www.capcut.com/",
+      icon: "https://example.com/icons/capcut.png"
     },
     {
       name: "Vidyo",
@@ -358,7 +381,8 @@ const tools = [
         "Templates personalizados"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "#"
+      link: "https://www.vidyo.ai/",
+      icon: "https://example.com/icons/vidyo.png"
     },
     {
       name: "Autopod",
@@ -373,7 +397,8 @@ const tools = [
         "Exportação otimizada"
       ],
       tags: ["Áudio", "Podcast"],
-      link: "#"
+      link: "https://www.autopod.com/",
+      icon: "https://example.com/icons/autopod.png"
     },
     {
       name: "Canva Magic Design",
@@ -388,7 +413,8 @@ const tools = [
         "Colaboração em equipe"
       ],
       tags: ["Design", "Criação"],
-      link: "#"
+      link: "https://www.canva.com/magic-design/",
+      icon: "https://example.com/icons/canva.png"
     },
     {
       name: "YouLearn",
@@ -403,7 +429,8 @@ const tools = [
         "Gamificação"
       ],
       tags: ["Educação", "Automação"],
-      link: "#"
+      link: "https://www.youlearn.com/",
+      icon: "https://example.com/icons/youlearn.png"
     },
     {
       name: "VocalReplica",
@@ -418,7 +445,8 @@ const tools = [
         "Edição de áudio"
       ],
       tags: ["Áudio", "Edição"],
-      link: "#"
+      link: "https://www.vocalreplica.com/",
+      icon: "https://example.com/icons/vocalreplica.png"
     },
     {
       name: "Dora",
@@ -433,7 +461,8 @@ const tools = [
         "Integração com IA"
       ],
       tags: ["Web", "Automação"],
-      link: "#"
+      link: "https://www.dora.com/",
+      icon: "https://example.com/icons/dora.png"
     },
     {
       name: "Speechy",
@@ -448,10 +477,10 @@ const tools = [
         "Dicas de apresentação"
       ],
       tags: ["Educação", "Fala"],
-      link: "#"
+      link: "https://www.speechy.com/",
+      icon: "https://example.com/icons/speechy.png"
     }
   ];
-  
   
   function renderTools(toolsArray) {
     const grid = document.querySelector('.grid');
@@ -463,9 +492,7 @@ const tools = [
       
       card.innerHTML = `
         <div class="card-header">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
+          <img src="${tool.icon}" alt="${tool.name} logo" class="tool-icon">
           <h2>${tool.name}</h2>
         </div>
         <p class="description">${tool.description}</p>
@@ -491,29 +518,28 @@ const tools = [
     return dots;
   }
   
-const filterButtons = document.querySelectorAll('.category-filter');
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.textContent;
-
-    // Verifica se o botão já está marcado
-    if (button.classList.contains('selected')) {
-      // Se estiver marcado, desmarque o botão e mostre todos os tools
-      button.classList.remove('selected');
-      renderTools(tools); // Remove o filtro e mostra todas as ferramentas
-    } else {
-      // Se não estiver marcado, desmarque todos os outros e marque o botão clicado
-      filterButtons.forEach(btn => btn.classList.remove('selected'));
-      button.classList.add('selected');
-
-      // Filtra as ferramentas pela categoria e renderiza
-      const filteredTools = tools.filter(tool => tool.category === category);
-      renderTools(filteredTools);
-    }
+  const filterButtons = document.querySelectorAll('.category-filter');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.textContent;
+  
+      // Verifica se o botão já está marcado
+      if (button.classList.contains('selected')) {
+        // Se estiver marcado, desmarque o botão e mostre todos os tools
+        button.classList.remove('selected');
+        renderTools(tools); // Remove o filtro e mostra todas as ferramentas
+      } else {
+        // Se não estiver marcado, desmarque todos os outros e marque o botão clicado
+        filterButtons.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+  
+        // Filtra as ferramentas pela categoria e renderiza
+        const filteredTools = tools.filter(tool => tool.category === category);
+        renderTools(filteredTools);
+      }
+    });
   });
-});
-
   
   // Renderiza todas as ferramentas no carregamento
   renderTools(tools);
