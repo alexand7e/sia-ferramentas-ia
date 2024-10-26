@@ -142,7 +142,7 @@ const tools = [
       ],
       tags: ["Redes Sociais", "Automação"],
       link: "https://www.replymind.com/",
-      icon: "https://www.replymind.com/homapage/navbar/logo.png"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JDE933rFRZkxL6oCx5OW8fsPIhGPs7CU3g&s"
     },
     {
       name: "Suno",
@@ -158,7 +158,7 @@ const tools = [
       ],
       tags: ["Música", "Áudio"],
       link: "https://suno.com/",
-      icon: "https://suno.com/logos/Logo-7.svg"
+      icon: "https://img.alicdn.com/imgextra/i3/2216045781517/O1CN01XjlCbk1N4plcY5u1y_!!2-item_pic.png"
     },
     {
       name: "Adobe FireFly",
@@ -254,7 +254,7 @@ const tools = [
       ],
       tags: ["Análise", "Automação"],
       link: "https://claude.ai/",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Claude_Ai.svg/1024px-Claude_Ai.svg.png"
+      icon: "https://claude.ai/images/claude_app_icon.png"
     },
     {
       name: "Gemini",
@@ -382,7 +382,7 @@ const tools = [
       ],
       tags: ["Vídeo", "Edição"],
       link: "https://vidyo.ai/?via=duong-am&gad_source=1",
-      icon: "https://cdn.prod.website-files.com/649330c3e40d813f90d8bb28/67013ebd50dbe0beb2a2774e_Vidyo-Logo-White-Nav.webp"
+      icon: "https://stackviv.ai/wp-content/uploads/2023/11/Vidyo.png.webp"
     },
     {
       name: "Autopod",
@@ -430,7 +430,7 @@ const tools = [
       ],
       tags: ["Educação", "Automação"],
       link: "https://www.youlearn.ai/",
-      icon: "https://framerusercontent.com/images/2Qgh6K1tlFdsi2TUQHGLrkGT60.png"
+      icon: "https://app.youlearn.ai/youlearn.png"
     },
     {
       name: "VocalReplica",
@@ -465,7 +465,7 @@ const tools = [
       icon: "https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/logo.png"
     },
     {
-      name: "Speechy",
+      name: "Speechify",
       description: "Treinamento de fala",
       category: "📚 Educação",
       difficulty: 3,
@@ -478,7 +478,7 @@ const tools = [
       ],
       tags: ["Educação", "Fala"],
       link: "https://www.speechy.com/",
-      icon: "https://website.cdn.speechify.com/speechify-logo-v2.svg?quality=80&width=256"
+      icon: "https://play-lh.googleusercontent.com/KeE4TV1dcCZyd8iEYIYbOxBNPvdbMXs-VcJ-gNTA8En07mIVikts7dnT07PYk62dJ9er"
     }
   ];
   
