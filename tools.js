@@ -62,7 +62,7 @@ const tools = [
       ],
       tags: ["Transcrição", "Áudio"],
       link: "https://www.listenmonster.com/",
-      icon: "https://example.com/icons/listenmonster.png"
+      icon: "https://listenmonster.com/images/Logo.png"
     },
     {
       name: "Ideogram",
@@ -77,8 +77,8 @@ const tools = [
         "Exportação em alta resolução"
       ],
       tags: ["Imagens", "Arte"],
-      link: "https://www.ideogram.com/",
-      icon: "https://example.com/icons/ideogram.png"
+      link: "https://ideogram.ai/",
+      icon: "https://digino.org/wp-content/uploads/2023/12/ideogram-ai-logo.png"
     },
     {
       name: "Magic Studio",
@@ -93,8 +93,8 @@ const tools = [
         "Geração de variações"
       ],
       tags: ["Imagens", "Automação"],
-      link: "https://www.magicstudio.com/",
-      icon: "https://example.com/icons/magicstudio.png"
+      link: "https://magicstudio.com/pt/",
+      icon: "https://meta.magicstudio.com/assets/studio-logo.svg"
     },
     {
       name: "Postwise",
@@ -109,8 +109,8 @@ const tools = [
         "Sugestões de conteúdo"
       ],
       tags: ["Redes Sociais", "Automação"],
-      link: "https://www.postwise.com/",
-      icon: "https://example.com/icons/postwise.png"
+      link: "https://postwise.ai/",
+      icon: "https://cdn-1.webcatalog.io/catalog/postwise/postwise-icon-filled-256.png?v=1714782939491"
     },
     {
       name: "Midjourney",
@@ -126,10 +126,10 @@ const tools = [
       ],
       tags: ["Arte", "Design"],
       link: "https://www.midjourney.com/",
-      icon: "https://example.com/icons/midjourney.png"
+      icon: "https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg"
     },
     {
-      name: "ReplayMind",
+      name: "ReplyMind",
       description: "Automação de respostas em redes sociais",
       category: "💬 Comunicação",
       difficulty: 4,
@@ -141,11 +141,11 @@ const tools = [
         "Relatórios de engajamento"
       ],
       tags: ["Redes Sociais", "Automação"],
-      link: "https://www.replaymind.com/",
-      icon: "https://example.com/icons/replaymind.png"
+      link: "https://www.replymind.com/",
+      icon: "https://www.replymind.com/homapage/navbar/logo.png"
     },
     {
-      name: "Mubert",
+      name: "Suno",
       description: "Geração de música",
       category: "🎥 Vídeo",
       difficulty: 3,
@@ -157,8 +157,8 @@ const tools = [
         "Exportação em diversos formatos"
       ],
       tags: ["Música", "Áudio"],
-      link: "https://www.mubert.com/",
-      icon: "https://example.com/icons/mubert.png"
+      link: "https://suno.com/",
+      icon: "https://suno.com/logos/Logo-7.svg"
     },
     {
       name: "Adobe FireFly",
@@ -173,8 +173,8 @@ const tools = [
         "Efeitos especiais"
       ],
       tags: ["Imagens", "Design"],
-      link: "https://www.adobe.com/firefly",
-      icon: "https://example.com/icons/adobefirefly.png"
+      link: "https://firefly.adobe.com/inspire/images?ff_channel=adobe_com&ff_campaign=ffly_homepage&ff_source=firefly_seo",
+      icon: "https://firefly.adobe.com/imgs/firefly_appicon_mobile.2c11f10a.svg"
     },
     {
       name: "Supertools",
@@ -189,8 +189,8 @@ const tools = [
         "Automação de tarefas"
       ],
       tags: ["Automação", "Criação de Conteúdo"],
-      link: "https://www.supertools.com/",
-      icon: "https://example.com/icons/supertools.png"
+      link: "https://supertools.therundown.ai/",
+      icon: "https://assets.super.so/9b1db7dc-155d-4da6-bf88-a68ad1c2af0f/uploads/favicon/f4df662c-f46b-41d1-8e0c-9d0ef23e6a93.png"
     },
     {
       name: "OpenArt",
@@ -205,8 +205,8 @@ const tools = [
         "Exportação em alta qualidade"
       ],
       tags: ["Imagens", "Arte"],
-      link: "https://www.openart.com/",
-      icon: "https://example.com/icons/openart.png"
+      link: "https://openart.ai/",
+      icon: "https://cdn.prod.website-files.com/6600e1eab90de089c2d9c972/661592239b560b13e5156fa7_Logo_dark.svg"
     },
     {
       name: "Rytr",
@@ -221,8 +221,8 @@ const tools = [
         "Templates prontos"
       ],
       tags: ["Escrita", "Automação"],
-      link: "https://www.rytr.me/",
-      icon: "https://example.com/icons/rytr.png"
+      link: "https://rytr.me/",
+      icon: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9f8df7c21faf1372a87be5c4c02dab65/rytr.png"
     },
     {
       name: "ChatGPT",
@@ -238,7 +238,7 @@ const tools = [
       ],
       tags: ["Conversação", "Automação"],
       link: "https://chat.openai.com/",
-      icon: "https://example.com/icons/chatgpt.png"
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png"
     },
     {
       name: "Claude",
@@ -253,46 +253,46 @@ const tools = [
         "Redação avançada"
       ],
       tags: ["Análise", "Automação"],
-      link: "https://www.anthropic.com/",
-      icon: "https://example.com/icons/claude.png"
+      link: "https://claude.ai/",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Claude_Ai.svg/1024px-Claude_Ai.svg.png"
     },
     {
-      name: "Noor",
-      description: "Processamento de língua árabe",
-      category: "🌐 Web e Desenvolvimento",
-      difficulty: 3,
-      features: [
-        "Tradução árabe",
-        "Geração de texto",
-        "Análise linguística",
-        "Correção gramatical",
-        "Transcrição fonética"
-      ],
-      tags: ["Linguística", "Automação"],
-      link: "https://www.noor.com/",
-      icon: "https://example.com/icons/noor.png"
-    },
-    {
-      name: "Falcon",
-      description: "Processamento de linguagem natural",
+      name: "Gemini",
+      description: "Assistente avançado de IA e Assistente Google",
       category: "🤖 Automação",
-      difficulty: 4,
+      difficulty: 2,
       features: [
-        "Análise de texto multilingue",
-        "Geração de conteúdo",
-        "Tradução",
-        "Classificação de texto",
-        "Extração de informações"
+        "Análise complexa",
+        "Processamento de documentos",
+        "Auxílio em pesquisa",
+        "Programação assistida",
+        "Redação avançada"
       ],
       tags: ["Linguística", "Automação"],
-      link: "https://www.falcon.com/",
-      icon: "https://example.com/icons/falcon.png"
+      link: "https://gemini.google.com/app?hl=pt-BR",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s"
     },
     {
-      name: "Runway",
+      "name": "IBM Watson",
+      "description": "Plataforma de IA para automação e processamento de linguagem natural",
+      "category": "🤖 Automação",
+      "difficulty": 4,
+      "features": [
+        "Análise de texto multilingue",
+        "Criação de assistentes virtuais",
+        "Extração de informações",
+        "Classificação de texto",
+        "Tradução automática"
+      ],
+      "tags": ["Linguística", "Automação"],
+      "link": "https://www.ibm.com/br-pt/watson",
+      "icon": "https://www.ibm.com/favicon.ico"
+    },
+    {
+      name: "VideoGen",
       description: "Edição e criação de vídeo",
       category: "🎥 Vídeo",
-      difficulty: 4,
+      difficulty: 3,
       features: [
         "Edição automática",
         "Efeitos especiais",
@@ -301,8 +301,8 @@ const tools = [
         "Motion tracking"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "https://www.runwayml.com/",
-      icon: "https://example.com/icons/runway.png"
+      link: "https://videogen.io/?via=runway",
+      icon: "https://atai-main.b-cdn.net/tools/videogen-icon.png"
     },
     {
       name: "Clipdrop",
@@ -318,7 +318,7 @@ const tools = [
       ],
       tags: ["Imagens", "Design"],
       link: "https://www.clipdrop.co/",
-      icon: "https://example.com/icons/clipdrop.png"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlyB2qAHAPqIuZ7p86uAb8u21cz7aCnQlZA&s"
     },
     {
       name: "DreamStudio",
@@ -334,7 +334,7 @@ const tools = [
       ],
       tags: ["Imagens", "Design"],
       link: "https://www.dreamstudio.ai/",
-      icon: "https://example.com/icons/dreamstudio.png"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72Cix8-F7qUtmxh8G55QkXwPiAJ1jN5G4Nw&s"
     },
     {
       name: "Ostagram",
@@ -349,8 +349,8 @@ const tools = [
         "Galeria de estilos"
       ],
       tags: ["Imagens", "Arte"],
-      link: "https://www.ostagram.me/",
-      icon: "https://example.com/icons/ostagram.png"
+      link: "https://www.ostagram.me/static_pages/lenta?last_days=1000&locale=en",
+      icon: "https://www.ostagram.me/logo.png"
     },
     {
       name: "CapCut",
@@ -365,8 +365,8 @@ const tools = [
         "Templates prontos"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "https://www.capcut.com/",
-      icon: "https://example.com/icons/capcut.png"
+      link: "https://www.capcut.com/pt-br/tools/ai-video-generator",
+      icon: "https://images.sftcdn.net/images/t_app-icon-m/p/3ab9b4bc-bd4c-4ee3-b65e-fbab19e88adf/2239545102/capcut-Download-CapCut.jpg"
     },
     {
       name: "Vidyo",
@@ -381,8 +381,8 @@ const tools = [
         "Templates personalizados"
       ],
       tags: ["Vídeo", "Edição"],
-      link: "https://www.vidyo.ai/",
-      icon: "https://example.com/icons/vidyo.png"
+      link: "https://vidyo.ai/?via=duong-am&gad_source=1",
+      icon: "https://cdn.prod.website-files.com/649330c3e40d813f90d8bb28/67013ebd50dbe0beb2a2774e_Vidyo-Logo-White-Nav.webp"
     },
     {
       name: "Autopod",
@@ -397,8 +397,8 @@ const tools = [
         "Exportação otimizada"
       ],
       tags: ["Áudio", "Podcast"],
-      link: "https://www.autopod.com/",
-      icon: "https://example.com/icons/autopod.png"
+      link: "https://www.autopod.fm/",
+      icon: "https://cdn.prod.website-files.com/6366be903a6ceae134a4c884/642dd490353b4f35be29e05f_all%20blue%20logo%20banner-p-500.png"
     },
     {
       name: "Canva Magic Design",
@@ -414,7 +414,7 @@ const tools = [
       ],
       tags: ["Design", "Criação"],
       link: "https://www.canva.com/magic-design/",
-      icon: "https://example.com/icons/canva.png"
+      icon: "https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg"
     },
     {
       name: "YouLearn",
@@ -429,8 +429,8 @@ const tools = [
         "Gamificação"
       ],
       tags: ["Educação", "Automação"],
-      link: "https://www.youlearn.com/",
-      icon: "https://example.com/icons/youlearn.png"
+      link: "https://www.youlearn.ai/",
+      icon: "https://framerusercontent.com/images/2Qgh6K1tlFdsi2TUQHGLrkGT60.png"
     },
     {
       name: "VocalReplica",
@@ -445,8 +445,8 @@ const tools = [
         "Edição de áudio"
       ],
       tags: ["Áudio", "Edição"],
-      link: "https://www.vocalreplica.com/",
-      icon: "https://example.com/icons/vocalreplica.png"
+      link: "https://acestudio.ai/",
+      icon: "https://pbs.twimg.com/profile_images/1547177547330355200/7J8zlbZB_400x400.png"
     },
     {
       name: "Dora",
@@ -461,8 +461,8 @@ const tools = [
         "Integração com IA"
       ],
       tags: ["Web", "Automação"],
-      link: "https://www.dora.com/",
-      icon: "https://example.com/icons/dora.png"
+      link: "https://www.dora.run/ai",
+      icon: "https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/logo.png"
     },
     {
       name: "Speechy",
@@ -478,7 +478,7 @@ const tools = [
       ],
       tags: ["Educação", "Fala"],
       link: "https://www.speechy.com/",
-      icon: "https://example.com/icons/speechy.png"
+      icon: "https://website.cdn.speechify.com/speechify-logo-v2.svg?quality=80&width=256"
     }
   ];
   
