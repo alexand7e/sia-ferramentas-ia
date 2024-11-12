@@ -209,8 +209,8 @@ body {
     background-color: #e25a30; /* Laranja mais claro para "pago" */
 }
 
-.license.pago-com-teste-gratuito {
-    background-color: #FFB300; /* Amarelo mais claro para "pago com teste gratuito" */
+.license.pago--teste-gratuito- {
+    background-color: #d6c43d; 
 }
 
 .languages {

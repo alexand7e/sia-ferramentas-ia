@@ -17,7 +17,10 @@ function renderTools(toolsArray) {
             <div class="usability" data-tooltip="Nota para acessibilidade: ${tool.usability}">
             ${renderusability(tool.usability)}
             </div>
-            <div class="license ${tool.license.replace(/\s+/g, '-').toLowerCase()}">${tool.license}</div>
+            <div class="license ${tool.license.replace(/\s+|\(|\)/g, '-').toLowerCase()}">
+            ${tool.license}
+            </div>
+
             <ul class="features-list">
                 ${tool.features.map(feature => `<li>${feature}</li>`).join('')}
             </ul>
@@ -27,7 +30,7 @@ function renderTools(toolsArray) {
             <div class="languages">
                 ${tool.language.map(lang => `<span class="language">${lang}</span>`).join('')}
             </div>
-            <a href="${tool.link}" class="link">Acessar Ferramenta</a>
+            <a href="${tool.link}" class="link" target="_blank" rel="noopener noreferrer">Acessar Ferramenta</a>
         `;
         
         grid.appendChild(card);
