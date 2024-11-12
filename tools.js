@@ -90,7 +90,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.listenmonster.com/",
-    "icon": "https://listenmonster.com/images/Logo.png"
+    "icon": "https://cdn-1.webcatalog.io/catalog/listen-monster/listen-monster-icon-filled-256.png?v=1722863198701"
   },
   {
     "name": "Ideogram",
@@ -136,7 +136,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://magicstudio.com/pt/",
-    "icon": "https://meta.magicstudio.com/assets/studio-logo.svg"
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtH5bQuqO2_7hKIUZvBhaDGcYI5M9zxxhJhm8mr53ZSAKEyzqRcj7MWSyNZHRcxV6WME&usqp=CAU"
   },
   {
     "name": "Postwise",
@@ -327,7 +327,7 @@ export const tools = [
     "description": "Assistente conversacional",
     "category": "🤖 Automação",
     "license": "Gratuito e Pago",
-    "usability": 4,
+    "usability": 5,
     "features": [
       "Respostas em linguagem natural",
       "Auxílio em programação",
@@ -351,7 +351,7 @@ export const tools = [
     "description": "Assistente avançado de IA",
     "category": "🤖 Automação",
     "license": "Gratuito e Pago",
-    "usability": 4,
+    "usability": 5,
     "features": [
       "Análise complexa",
       "Processamento de documentos",
@@ -375,7 +375,7 @@ export const tools = [
     "description": "Assistente avançado de IA e Assistente Google",
     "category": "🤖 Automação",
     "license": "Gratuito",
-    "usability": 4,
+    "usability": 5,
     "features": [
       "Análise complexa",
       "Processamento de documentos",
@@ -487,29 +487,6 @@ export const tools = [
     ],
     "link": "https://www.dreamstudio.ai/",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72Cix8-F7qUtmxh8G55QkXwPiAJ1jN5G4Nw&s"
-  },
-  {
-    "name": "Ostagram",
-    "description": "Fusão artística de imagens",
-    "category": "🎨 Design",
-    "license": "Gratuito e Pago",
-    "usability": 4,
-    "features": [
-      "Transferência de estilo",
-      "Fusão de imagens",
-      "Efeitos artísticos",
-      "Personalização de parâmetros",
-      "Galeria de estilos"
-    ],
-    "tags": [
-      "Imagens",
-      "Arte"
-    ],
-    "language": [
-      "EN"
-    ],
-    "link": "https://www.ostagram.me/static_pages/lenta?last_days=1000&locale=en",
-    "icon": "https://www.ostagram.me/logo.png"
   },
   {
     "name": "CapCut",
@@ -670,7 +647,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.dora.run/ai",
-    "icon": "https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/logo.png"
+    "icon": "https://www.dora.run/__dora__/account/assets/logo.3c206881.svg"
   },
   {
     "name": "Speechify",
@@ -785,7 +762,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.marketmuse.com",
+    "link": "https://creativedestructionlab.com/wp-content/uploads/2018/07/marketmusse.jpg",
     "icon": "https://juliety.com/wpcontent/uploads/2023/05/marketmuse-logo.png\n\n"
   },
   {
@@ -1130,13 +1107,13 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.myheritage.com/deep-nostalgia",
-    "icon": "https://static-00.iconduck.com/assets.00/myheritage-icon-256x256-g7qycwju.pngg"
+    "icon": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2012/08/MyHeritage_icon.jpg"
   },
   {
     "name": "SuferSEO",
     "description": "Ferramenta de SEO com otimização de conteúdo orientada por dados",
     "category": "🔍 Análise",
-    "license": "Pago (teste gratuito)",
+    "license": "Gratuito",
     "usability": 4,
     "features": [
       "Análise de palavras-chave",
@@ -1293,7 +1270,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://www.mendeley.com",
-    "icon": "https://static.mendeley.com/md-stitch/releases/live/logo-full-white.a836c780.svg"
+    "icon": "https://banner2.cleanpng.com/20190309/vuz/kisspng-mendeley-logo-computer-software-reference-manageme-1713902332467.webp"
   },
   {
     "name": "Wolfram Alpha",
@@ -2297,7 +2274,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://adcopy.ai/",
-    "icon": "https://cdn.prod.website-files.com/63c37c582c404b3609f80553/66c5bd4c0fd84cd3b595c9db_image%2060-min%20(1).png"
+    "icon": "https://pbs.twimg.com/profile_images/1641115343857893390/6yGOotPy_400x400.png"
   },
   {
     "name": "Predis AI",
@@ -2536,7 +2513,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.udio.com/home",
-    "icon": "https://www.udio.com/_next/static/media/logo-white-beta.54c33d6c.svg"
+    "icon": "https://i.pinimg.com/736x/1c/65/6a/1c656a8d8342d6b9f7510df2c73b6399.jpg"
   },
   {
     "name": "Deepgram",
@@ -2560,7 +2537,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://deepgram.com/",
-    "icon": "https://www.datocms-assets.com/96965/1683539914-logo.svg"
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_J3lQfLZCSZsrrfBUelLctJCd1rIRcBb3n5vy7LXdDZ0E7_uq5GF_xw8tOPJF8H93m20&usqp=CAU"
   },
   {
     "name": "ElevenLabs",
@@ -2684,7 +2661,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.velir.com/ideas/2024/10/16/meet-sitecore-stream-a-marketers-new-best-friend?utm_source=google&utm_medium=cpc&utm_campaign=search_partners_sitecore_stream&utm_id=21835534018&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595hOmLxFFLs-2WvppLEaCvkJ7uWQUiNL03EO8aTPUTCwE5R64i0ra44aAuRDEALw_wcB",
-    "icon": "https://www.velir.com/-/media/logos/horizontal-white.svg"
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNf2gmbxg9SpQZl01n_P7eOh3TT0prKC0ouCwoyD3uEHA9Ox0IY9WtOxdNl8nTXMG0jA&usqp=CAU"
   },
   {
     "name": "VisualEyes",
@@ -2734,7 +2711,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.dzine.ai/?via=quocbao&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595i1LCEZVacYq2III6q3hJuLKdPvCscMcIVvA0uiD1jf5kaMInnLQiMaAkQ-EALw_wcB",
-    "icon": "https://static.dzine.ai/assets/dzine_logo_home-d8d4c1d3.svg"
+    "icon": "https://miro.medium.com/v2/resize:fit:850/1*VgXJsbY74hrGd7umkTgn8Q.jpeg"
   },
   {
     "name": "Phygital+",
@@ -2931,7 +2908,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://designs.ai/",
-    "icon": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fc%2Fdesignsaiofficial&psig=AOvVaw0KoiUodhr9_voCQIiNl1IH&ust=1731420258687000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjL74mdudSJAxXGNrkGHUUyJPwQjRx6BAgAEBk"
+    "icon": "https://assets.designs.ai/images/dsai-logo/default.webp"
   },
   {
     "name": "Piktochart AI",
@@ -2970,7 +2947,6 @@ export const tools = [
       "Artigos e recursos educacionais."
     ],
     "tags": [
-      "IA Generativa",
       "Modelos de IA",
       "Comunidade."
     ],
@@ -2994,7 +2970,6 @@ export const tools = [
       "Substituição de fundo"
     ],
     "tags": [
-      "IA Generativa",
       "Edição de Vídeo",
       "Criação de Conteúdo"
     ],
@@ -3018,7 +2993,6 @@ export const tools = [
       "Flexibilidade na proporção de aspecto dos vídeos gerados."
     ],
     "tags": [
-      "IA Generativa",
       "Criação de Vídeo",
       "Multimídia."
     ],
@@ -3076,14 +3050,14 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.choppity.com/features/clip-anything",
-    "icon": "https://cdn.prod.website-files.com/669802ce331217e2ab025d1c/66a38191fc6cf1ea92f40696_logo_w.svg"
+    "icon": "https://media.licdn.com/dms/image/v2/D4E0BAQHzu2wTt7Sntg/company-logo_200_200/company-logo_200_200/0/1694865743372/choppity_logo?e=2147483647&v=beta&t=zTyYk5xl2CVZcvoMtlaAh7CxEOH0hjAyKMNwvyeCMh0"
   },
   {
     "name": "ComfyUI",
     "description": "Interface gráfica modular para modelos de difusão, permitindo a criação de fluxos de trabalho complexos de Stable Diffusion através de uma interface baseada em nós",
     "category": "🎨 Design",
     "license": "Gratuito",
-    "usability": 1,
+    "usability": 2,
     "features": [
       "Interface de nós/fluxograma para experimentação e criação de fluxos de trabalho complexos de Stable Diffusion sem necessidade de codificação",
       "Suporte completo a SD1.x",
@@ -3101,8 +3075,6 @@ export const tools = [
       "locon e loha) e Hypernetworks"
     ],
     "tags": [
-      "IA Generativa",
-      "Stable Diffusion",
       "Interface Gráfica",
       "Modelos de Difusão"
     ],

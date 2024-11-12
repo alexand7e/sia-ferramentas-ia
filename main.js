@@ -37,6 +37,26 @@ function renderTools(toolsArray) {
     });
   }
   
+// Variável para armazenar a ordem original
+const originalToolsOrder = [...tools];
+let isSortedAZ = false; // Estado atual da ordenação
+
+function toggleSortOrder() {
+    const sortButton = document.getElementById("sort-button");
+
+    if (isSortedAZ) {
+        renderTools(originalToolsOrder);
+        sortButton.textContent = "Ordenar";
+    } else {
+        const sortedTools = [...tools].sort((a, b) => a.name.localeCompare(b.name));
+        renderTools(sortedTools);
+        sortButton.textContent = "Ordenar";
+    }
+
+    isSortedAZ = !isSortedAZ; // Alterna o estado de ordenação
+}
+
+document.getElementById("sort-button").addEventListener("click", toggleSortOrder);
 
 function renderusability(level) {
   let dots = '';
