@@ -177,3 +177,52 @@ footer p {
     height: 40px;
     margin-right: 10px;
 }
+
+/* Contêiner de Pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Estilo do Botão de Pesquisa (ícone) */
+#search-button {
+    background: none; /* Remove o fundo */
+    border: none;
+    cursor: pointer;
+    padding: 4px; /* Reduz o padding */
+}
+
+#search-button .icon {
+    width: 20px;
+    height: 20px;
+    color: #1976d2; /* Cor do ícone */
+    transition: color 0.2s;
+}
+
+#search-button:hover .icon {
+    color: #0d47a1; /* Escurece o ícone ao passar o mouse */
+}
+
+/* Estilo do Campo de Entrada (Caixa de Pesquisa) */
+#search-input {
+    display: none; /* Inicialmente escondido */
+    padding: 8px 16px;
+    width: 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    outline: none;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container.active #search-input {
+    display: block;
+    width: 200px; /* Largura maior para a caixa de pesquisa */
+    opacity: 1;
+}
+
