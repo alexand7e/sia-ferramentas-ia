@@ -72,26 +72,26 @@ document.getElementById("search-input").addEventListener("input", function() {
 const filterButtons = document.querySelectorAll('.category-filter');
 
 document.addEventListener("DOMContentLoaded", function() {
-    const filterButtons = document.querySelectorAll('.category-filter');
+    const filterItems = document.querySelectorAll('.category-filter');
     let selectedCategory = null;
     let selectedLicense = null;
     let selectedLanguage = null;
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filterType = button.closest('.filter-container')?.querySelector('.filter-toggle')?.textContent;
-            const filterValue = button.textContent.trim();
+    filterItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const filterType = item.closest('.filter-container')?.querySelector('.filter-toggle')?.textContent;
+            const filterValue = item.textContent.trim();
 
-            // Desmarca todos os botões da mesma categoria de filtro
+            // Desmarca todos os itens da mesma categoria de filtro
             if (filterType === '🔒 Tipo de Licença') {
                 selectedLicense = selectedLicense === filterValue ? null : filterValue;
-                updateFilterButtonState(button, selectedLicense, filterValue);
+                updateFilterItemState(item, selectedLicense, filterValue);
             } else if (filterType === '🌐 Linguagem') {
                 selectedLanguage = selectedLanguage === filterValue ? null : filterValue;
-                updateFilterButtonState(button, selectedLanguage, filterValue);
+                updateFilterItemState(item, selectedLanguage, filterValue);
             } else {
                 selectedCategory = selectedCategory === filterValue ? null : filterValue;
-                updateFilterButtonState(button, selectedCategory, filterValue);
+                updateFilterItemState(item, selectedCategory, filterValue);
             }
 
             // Filtra as ferramentas com base nos filtros selecionados
@@ -99,11 +99,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function updateFilterButtonState(button, selectedFilter, filterValue) {
-        filterButtons.forEach(btn => {
+    function updateFilterItemState(item, selectedFilter, filterValue) {
+        filterItems.forEach(btn => {
             if (btn.textContent.trim() === filterValue) {
                 btn.classList.toggle('selected', selectedFilter === filterValue);
-            } else if (btn.closest('.filter-container') === button.closest('.filter-container')) {
+            } else if (btn.closest('.filter-container') === item.closest('.filter-container')) {
                 btn.classList.remove('selected');
             }
         });
@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
         renderTools(filteredTools);
     }
 });
+
 
 
 // Renderiza todas as ferramentas no carregamento

@@ -21,7 +21,7 @@ body {
     gap: 10px;
     justify-content: center;
     margin-bottom: 30px;
-    position: relative; /* Define o contêiner principal como referência */
+    position: relative; 
 }
 
 .category-filter {
@@ -34,25 +34,40 @@ body {
     transition: all 0.2s;
 }
 
+/* Estilo para itens de filtro (não selecionados) */
+.filter-content li {
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 0.85em;
+}
+
+/* Estilo para o item de filtro ao passar o mouse */
+.filter-content li:hover {
+    background: #e3f2fd;
+}
+
+/* Estilo para o item selecionado */
+.filter-content li.selected {
+    background-color: #007bff; /* Cor de fundo destacada */
+    color: white; /* Cor do texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 0.85em;
+}
+
+
 .filter-content {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.filter-content li {
-    padding: 8px 16px;
-    background: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.2s;
-    margin-bottom: 5px;
-}
-
-.filter-content li:hover {
-    background: #e3f2fd;
-}
 
 .selected {
     background-color: #007bff;
@@ -148,11 +163,6 @@ body {
     visibility: visible;
 }
 
-
-.selected {
-    background-color: #007bff; /* Cor para marcar o botão */
-    color: white;
-}
 
 .grid {
     display: grid;
