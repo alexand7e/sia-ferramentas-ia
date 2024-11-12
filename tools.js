@@ -763,7 +763,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://creativedestructionlab.com/wp-content/uploads/2018/07/marketmusse.jpg",
-    "icon": "https://juliety.com/wpcontent/uploads/2023/05/marketmuse-logo.png\n\n"
+    "icon": "https://media.licdn.com/dms/image/v2/C4D0BAQEHWIaFY1KgJg/company-logo_200_200/company-logo_200_200/0/1630536114717/marketmuse_logo?e=2147483647&v=beta&t=y22shpfu8SdJnre50b0bNKjAKT-h_7E4S-TUCpnER64"
   },
   {
     "name": "Anyword",
