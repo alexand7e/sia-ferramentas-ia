@@ -29,14 +29,15 @@ function transformDataToJSON(data) {
   }));
 }
 
-async function loadAndTransformCSV(filePath) {
+async function loadAndTransformCSV(filePath, outputJsonPath) {
   try {
     const csvData = await loadCSV(filePath);
     const jsonData = transformDataToJSON(csvData);
-    console.log(JSON.stringify(jsonData, null, 2));
+    fs.writeFileSync(outputJsonPath, JSON.stringify(jsonData, null, 2), 'utf8');
+    console.log(`JSON data has been saved to ${outputJsonPath}`);
   } catch (error) {
     console.error(`Error processing file: ${filePath} - ${error}`);
   }
 }
 
-loadAndTransformCSV('./data/tools_data.csv');
+loadAndTransformCSV('./data/tools_data.csv', './data/tools_data.json');

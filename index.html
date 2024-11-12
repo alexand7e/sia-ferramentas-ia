@@ -12,20 +12,38 @@
         <p>Um guia completo das melhores ferramentas de IA para impulsionar seu negócio</p>
     </div>
 
-    <div class="category-filters">
+    <div class="category-filters search-container">
         <button id="search-button">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
         </button>
-        <input type="text" id="search-input" placeholder="Pesquisar...">
-
+        <input type="text" id="search-input" placeholder="Pesquisar">
     
         <button class="category-filter">🎨 Design</button>
         <button class="category-filter">📝 Conteúdo</button>
         <button class="category-filter">🎥 Vídeo</button>
         <button class="category-filter">🔍 Análise</button>
         <button class="category-filter">💬 Comunicação</button>
+    
+        <div class="filter-container">
+            <button class="filter-toggle">🔒 Tipo de Licença</button>
+            <div class="filter-content">
+                <button class="category-filter">Gratuito</button>
+                <button class="category-filter">Gratuito e Pago</button>
+                <button class="category-filter">Pago</button>
+                <button class="category-filter">Pago com Teste Gratuito</button>
+            </div>
+        </div>
+    
+        <div class="filter-container">
+            <button class="filter-toggle">🌐 Linguagem</button>
+            <div class="filter-content">
+                <button class="category-filter">Português</button>
+                <button class="category-filter">Inglês</button>
+                <button class="category-filter">Multilingue</button>
+            </div>
+        </div>
     </div>
     
     <div class="grid">
@@ -36,6 +54,6 @@
         <p>&copy; 2024 Secretaria de Inteligência Artificial do Piauí - SIA. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="tools.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
