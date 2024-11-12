@@ -337,7 +337,8 @@ export const tools = [
     ],
     "tags": [
       "Conversação",
-      "Automação"
+      "Automação",
+      "Chatbot"
     ],
     "language": [
       "Multilíngue"
@@ -360,7 +361,8 @@ export const tools = [
     ],
     "tags": [
       "Análise",
-      "Automação"
+      "Automação",
+      "Chatbot"
     ],
     "language": [
       "Multilíngue"
@@ -383,7 +385,8 @@ export const tools = [
     ],
     "tags": [
       "Linguística",
-      "Automação"
+      "Automação",
+      "Chatbot"
     ],
     "language": [
       "Multilíngue"
@@ -406,7 +409,8 @@ export const tools = [
     ],
     "tags": [
       "Linguística",
-      "Automação"
+      "Automação",
+      "Chatbot"
     ],
     "language": [
       "Multilíngue"
@@ -1032,8 +1036,7 @@ export const tools = [
     ],
     "tags": [
       "Imagens",
-      "Criação",
-      "IA"
+      "Criação"
     ],
     "language": [
       "EN"
@@ -1110,28 +1113,6 @@ export const tools = [
     ],
     "link": "https://creator.nightcafe.studio",
     "icon": "https://nightcafe.studio/cdn/shop/files/night-cafe-logo_978x.png?v=1614787028"
-  },
-  {
-    "name": "GANPaint",
-    "description": "Ferramenta de edição de imagem com redes generativas adversariais",
-    "category": "🎨 Design",
-    "license": "Gratuito",
-    "usability": 4,
-    "features": [
-      "Adicionar ou remover objetos em imagens",
-      "Edição em tempo real",
-      "Exploração de GANs"
-    ],
-    "tags": [
-      "Edição de Imagem",
-      "GAN",
-      "Criação"
-    ],
-    "language": [
-      "EN"
-    ],
-    "link": "https://ganpaint.io",
-    "icon": ""
   },
   {
     "name": "MyHeritage",
@@ -1265,7 +1246,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://cloud.google.com/speech-to-text",
-    "icon": ""
+    "icon": "https://www.gstatic.com/devrel-devsite/prod/v0e0f589edd85502a40d78d7d0825db8ea5ef3b99ab4070381ee86977c9168730/cloud/images/cloud-logo.svg"
   },
   {
     "name": "Audiopen.ai",
@@ -1381,7 +1362,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://www.gradescope.com/",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwlw4QKZl1AvIKHAmrtIW0rPXbtbnDfMVgQ&s"
   },
   {
     "name": "Quillbot ",
@@ -1402,7 +1383,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://www.quillbot.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4ccOo9DfZdcqGDpygRtkfKIIX9PRJrhQdQ&s"
   },
   {
     "name": "Photomath ",
@@ -1425,7 +1406,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://www.photomath.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnf84-d0KHysPJK_Ynjz1UBTchYCAj2llU-YWxC9mTdVZRCp0V"
   },
   {
     "name": "Socratic",
@@ -1448,7 +1429,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://socratic.org",
-    "icon": ""
+    "icon": "https://www.futurepedia.io/s3/optimized-image/2h3uGghOCKjClNIQ0XPo0s?format=auto&width=256"
   },
   {
     "name": "SlideAI.io",
@@ -1472,7 +1453,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.slidesai.io",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6bq9Wd-HfTcIhV7xguw_MMCIyNbFXefJ5pKbA35m9R0XCDDyyFLoqlc6hwGsaybQ55Q&usqp=CAU"
   },
   {
     "name": "Education Co Pilot",
@@ -1492,7 +1473,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.educationcopilot.com",
-    "icon": ""
+    "icon": "https://cdn.sendsteps.com/website/Kopie_van_Microsoft_365_Copilot_1080_x_700_px_d18f6ab510.png"
   },
   {
     "name": "Sendsteps.ai",
@@ -1514,7 +1495,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.sendsteps.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvRL-jjD5C7zNLF5DI4iYIVEX88GJBKWwQZcXWFzcu7YpoEY_SYqIqHrkqHOPyFjUuRE&usqp=CAU"
   },
   {
     "name": "Yippity",
@@ -1536,7 +1517,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.yippity.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlT6NIFMvTVC20WQj9RviUrsFpGgQrNoUiHkk1OPfjYFQfmSe7FVQuJebsEsJgiqqX2I&usqp=CAU"
   },
   {
     "name": "SymbMath",
@@ -1558,7 +1539,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.symbmath.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrhnmm_O21xFtA4BeMveRUgE_uz1r_HrPYhE-agFdeJqzJOpsudBqv1v_eD3BJpf6YZC0&usqp=CAU"
   },
   {
     "name": "Thinkster Math",
@@ -1581,7 +1562,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://hellothinkster.com/",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn8I0a9z2quJUv5dT8YF1xmNEJ40Qh3kW_ou9EwdjJmb0NpRARDke4Hq_D1JovPPAoPcQ&usqp=CAU"
   },
   {
     "name": "Lumen5",
@@ -1605,7 +1586,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.lumen5.com",
-    "icon": ""
+    "icon": "https://lumen5.com/learn/wp-content/uploads/2022/03/L5-logo-fullColor-rgb-Purple-Square.png"
   },
   {
     "name": "Storydoc ",
@@ -1629,7 +1610,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.storydoc.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiJay5shdsCyUhYXbApX9ZYUSzdcLQ5XlrSE70Sk1IJMzllwGf32XoOLzQQsBRLO7-Fg&usqp=CAU"
   },
   {
     "name": "JoggAI ",
@@ -1651,7 +1632,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://hellothinkster.com/",
-    "icon": ""
+    "icon": "https://res.jogg.ai/sub-module/static-file/71e8c708db37"
   },
   {
     "name": "Zapier",
@@ -1675,7 +1656,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.zapier.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN6ZksjABBgxRBWulwOsbWbQS0zOzSc7WVQcYZG9HXEeSgXE-hl_axFf3K4jY1gjrR3a4&usqp=CAUU"
   },
   {
     "name": "Lately",
@@ -1692,14 +1673,13 @@ export const tools = [
     ],
     "tags": [
       "Marketing de Conteúdo",
-      "Redes Sociais",
-      "IA"
+      "Redes Sociais"
     ],
     "language": [
       "EN"
     ],
     "link": "https://www.lately.ai",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6k5YtOBimqYqnHSPEzaXruGzfd99U9RdCy_xgIjyF6_5YXBup--gLGdfM5kO6fLq7so&usqp=CAU"
   },
   {
     "name": "FeedHive",
@@ -1716,14 +1696,13 @@ export const tools = [
     ],
     "tags": [
       "Redes Sociais",
-      "Automação",
-      "IA"
+      "Automação"
     ],
     "language": [
       "EN"
     ],
     "link": "https://www.feedhive.io",
-    "icon": ""
+    "icon": "https://hypefury.com/wp-content/uploads/2023/04/Feedhive-logo-only-300x300.png"
   },
   {
     "name": "Timeular",
@@ -1747,7 +1726,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.timeular.com",
-    "icon": ""
+    "icon": "https://pipedream.com/s.v0/app_02h9wE/logo/orig"
   },
   {
     "name": "Seventh Sense",
@@ -1771,7 +1750,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.theseventhsense.com",
-    "icon": ""
+    "icon": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_fe5ef8bf8d08d9ee9cf27eaf2fe7bb78/seventh-sense.jpeg"
   },
   {
     "name": "Maricata",
@@ -1795,7 +1774,7 @@ export const tools = [
       "PT"
     ],
     "link": "https://maricata.com",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSosl2tXbr48UhYwDHeao5ISoU0zZ4HQmTB1hVtrpi5OnPjhRsruNwUfbO3iCHQiDF36E&usqp=CAU"
   },
   {
     "name": "Julius",
@@ -1812,14 +1791,13 @@ export const tools = [
     ],
     "tags": [
       "Análise de Dados",
-      "Visão Computacional",
-      "IA"
+      "Visão Computacional"
     ],
     "language": [
       "EN"
     ],
     "link": "https://julius.ai/",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOigG8Mpo3HcSaROczVY0W8MOnwKLbEVZvLLflSxEpNLgXLZLx4fUnkjPXQwdt35eDDc&usqp=CAU"
   },
   {
     "name": "Microsoft Copilot",
@@ -1843,7 +1821,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://www.microsoft.com/copilot",
-    "icon": ""
+    "icon": "https://store-images.s-microsoft.com/image/apps.22196.13623743226081137.44717f35-32c5-4d9e-ab80-390d1fdf3f60.f47480f4-1941-4044-8028-2e94660969bf"
   },
   {
     "name": "Meta AI (Llama)",
@@ -1867,7 +1845,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://www.meta.ai",
-    "icon": ""
+    "icon": "https://images.indianexpress.com/2024/06/meta-ai.jpg?w=414"
   },
   {
     "name": "Character.AI",
@@ -1891,7 +1869,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://www.character.ai",
-    "icon": ""
+    "icon": "https://pbs.twimg.com/profile_images/1638842319104516097/TketN7Pm_200x200.jpg"
   },
   {
     "name": "Replika",
@@ -1915,7 +1893,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://www.replika.ai",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-I3O6IPIt60b3fY2Qdx8eUgw2JgUla7uZoUmTDRf7FnhVxCo2a_gNteCMY5uYqkf02XI&usqp=CAU"
   },
   {
     "name": "YouChat",
@@ -1939,7 +1917,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://you.com/chat",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67AeU1RDy_8yCsc-sVYGYC9Mf34_m9LTOXQ&s"
   },
   {
     "name": "Poe (Quora)",
@@ -1963,31 +1941,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://poe.com",
-    "icon": ""
-  },
-  {
-    "name": "Anthropic",
-    "description": "Focado em segurança e alinhamento, oferecendo respostas detalhadas.",
-    "category": "🤖 Automação",
-    "license": "Pago",
-    "usability": 3,
-    "features": [
-      "Respostas detalhadas",
-      "Foco em segurança e alinhamento",
-      "Capacidade de compreensão contextual",
-      "Feedback seguro",
-      "Suporte para várias indústrias"
-    ],
-    "tags": [
-      "Segurança",
-      "Ética",
-      "Respostas Detalhadas"
-    ],
-    "language": [
-      "EN"
-    ],
-    "link": "https://www.anthropic.com/claude",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFlQNFuMRKkdsw6EL9jTMhoecYeEayvFvNA&s"
   },
   {
     "name": "Chatsonic",
@@ -2005,37 +1959,14 @@ export const tools = [
     "tags": [
       "Imagens",
       "Voz",
-      "Personalização"
+      "Personalização",
+      "Chatbot"
     ],
     "language": [
       "EN"
     ],
     "link": "https://chatsonic.com",
-    "icon": ""
-  },
-  {
-    "name": "DialoGPT",
-    "description": "Modelo de conversação da Microsoft, adequado para diálogos informais.",
-    "category": "🤖 Automação",
-    "license": "Gratuito",
-    "usability": 4,
-    "features": [
-      "Conversação informal",
-      "Integração em aplicativos de chat",
-      "Respostas rápidas",
-      "Personalização de diálogo",
-      "Modelo de resposta fluida"
-    ],
-    "tags": [
-      "Conversação",
-      "Diálogo Informal",
-      "Microsoft"
-    ],
-    "language": [
-      "Multilíngue"
-    ],
-    "link": "https://github.com/microsoft/DialoGPT",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpuSv9qsXWQ7tvN9xvBJIiOyxc30fzAKGDw&s"
   },
   {
     "name": "BlenderBot",
@@ -2053,13 +1984,14 @@ export const tools = [
     "tags": [
       "Conversação",
       "Longo Prazo",
-      "Meta"
+      "Meta",
+      "Chatbot"
     ],
     "language": [
       "EN"
     ],
     "link": "https://ai.facebook.com/blenderbot",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoWNIVQLli9I7kdeOnzGNfyoQSIVbmBeZNw&s"
   },
   {
     "name": "Kuki AI",
@@ -2083,7 +2015,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://www.kuki.ai",
-    "icon": ""
+    "icon": "https://images.squarespace-cdn.com/content/v1/5fd110ee514f2770efc95c70/b1921d3e-5e8e-4e5a-9826-ab8ef85bd51e/K+fav+resized.png"
   },
   {
     "name": "Gamma",
@@ -2101,13 +2033,14 @@ export const tools = [
     "tags": [
       "Apresentações",
       "Design",
-      "Colaboração"
+      "Colaboração",
+      "Chatbot"
     ],
     "language": [
       "Multilíngue"
     ],
     "link": "https://gamma.app",
-    "icon": ""
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN01OFuXaJbc3vu8WQoUj0H5ln_koNgXnKw&s"
   },
   {
     "name": "Perplexity",
@@ -2241,8 +2174,7 @@ export const tools = [
     ],
     "tags": [
       "Codificação",
-      "Desenvolvimento",
-      "IA"
+      "Desenvolvimento"
     ],
     "language": [
       "EN"
@@ -2265,8 +2197,7 @@ export const tools = [
     ],
     "tags": [
       "Assistente",
-      "Produtividade",
-      "IA"
+      "Produtividade"
     ],
     "language": [
       "EN"
@@ -2289,8 +2220,7 @@ export const tools = [
     ],
     "tags": [
       "Navegação",
-      "Produtividade",
-      "IA"
+      "Produtividade"
     ],
     "language": [
       "EN"
@@ -2313,7 +2243,6 @@ export const tools = [
     ],
     "tags": [
       "Chat",
-      "IA",
       "Produtividade"
     ],
     "language": [
@@ -2362,8 +2291,7 @@ export const tools = [
     ],
     "tags": [
       "Publicidade",
-      "Anúncios",
-      "IA"
+      "Anúncios"
     ],
     "language": [
       "EN"
@@ -2386,8 +2314,7 @@ export const tools = [
     ],
     "tags": [
       "Redes Sociais",
-      "Conteúdo",
-      "IA"
+      "Conteúdo"
     ],
     "language": [
       "EN"
@@ -2410,8 +2337,7 @@ export const tools = [
     ],
     "tags": [
       "Engajamento",
-      "E-mail Marketing",
-      "IA"
+      "E-mail Marketing"
     ],
     "language": [
       "EN"
@@ -2434,8 +2360,7 @@ export const tools = [
     ],
     "tags": [
       "Automação",
-      "Produtividade",
-      "IA"
+      "Produtividade"
     ],
     "language": [
       "EN"
@@ -2458,8 +2383,7 @@ export const tools = [
     ],
     "tags": [
       "Publicidade",
-      "Anúncios",
-      "IA"
+      "Anúncios"
     ],
     "language": [
       "EN"
@@ -2482,8 +2406,7 @@ export const tools = [
     ],
     "tags": [
       "Escrita",
-      "Conteúdo",
-      "IA"
+      "Conteúdo"
     ],
     "language": [
       "EN"
@@ -2507,8 +2430,7 @@ export const tools = [
     "tags": [
       "Edição",
       "Áudio",
-      "Vídeo",
-      "IA"
+      "Vídeo"
     ],
     "language": [
       "EN"
@@ -2532,8 +2454,7 @@ export const tools = [
     "tags": [
       "Transcrição",
       "Áudio",
-      "Vídeo",
-      "IA"
+      "Vídeo"
     ],
     "language": [
       "EN"
@@ -2558,8 +2479,7 @@ export const tools = [
     "tags": [
       "Transcrição",
       "Áudio",
-      "Vídeo",
-      "IA"
+      "Vídeo"
     ],
     "language": [
       "Multilíngue"
@@ -2585,8 +2505,7 @@ export const tools = [
     "tags": [
       "Transcrição",
       "Áudio",
-      "Vídeo",
-      "IA"
+      "Vídeo"
     ],
     "language": [
       "EN"
@@ -2601,18 +2520,17 @@ export const tools = [
     "license": "Pago (teste gratuito)",
     "usability": 4,
     "features": [
-      "Música",
-      "IA",
-      "Criação Musical",
-      "Geração de Conteúdo"
-    ],
-    "tags": [
       "Geração de músicas a partir de descrições textuais",
       "Personalização de gênero",
       "estilo e letras",
       "Remixagem de músicas em diferentes estilos",
       "Colaboração com músicos para aprimoramento da IA",
       "Exportação e compartilhamento de faixas criadas"
+    ],
+    "tags": [
+      "Música",
+      "Criação Musical",
+      "Geração de Conteúdo"
     ],
     "language": [
       "EN"
@@ -2636,7 +2554,6 @@ export const tools = [
     "tags": [
       "Transcrição",
       "Reconhecimento de Voz",
-      "IA",
       "APIs"
     ],
     "language": [
@@ -2662,8 +2579,7 @@ export const tools = [
     "tags": [
       "Síntese de Fala",
       "Clonagem de Voz",
-      "Dublagem",
-      "IA."
+      "Dublagem"
     ],
     "language": [
       "Multilíngue"
@@ -2687,7 +2603,6 @@ export const tools = [
     ],
     "tags": [
       "Design de Interface",
-      "IA",
       "Figma",
       "UI/UX"
     ],
@@ -2715,7 +2630,6 @@ export const tools = [
     "tags": [
       "Design",
       "Cores",
-      "IA",
       "Paletas"
     ],
     "language": [
@@ -2739,7 +2653,6 @@ export const tools = [
     ],
     "tags": [
       "Design de Interface",
-      "IA",
       "Protótipos",
       "UI/UX"
     ],
@@ -2764,7 +2677,6 @@ export const tools = [
     ],
     "tags": [
       "Design de Interface",
-      "IA",
       "Wireframes",
       "Protótipos"
     ],
@@ -2791,7 +2703,6 @@ export const tools = [
     "tags": [
       "Design",
       "Análise",
-      "IA",
       "UX"
     ],
     "language": [
@@ -2816,7 +2727,6 @@ export const tools = [
     ],
     "tags": [
       "Design Gráfico",
-      "IA",
       "Edição de Imagens",
       "Geração de Imagens"
     ],
@@ -2987,8 +2897,7 @@ export const tools = [
     ],
     "tags": [
       "Design",
-      "Logotipo",
-      "IA"
+      "Logotipo"
     ],
     "language": [
       "EN"
@@ -3003,15 +2912,12 @@ export const tools = [
     "license": "Pago (teste gratuito)",
     "usability": 4,
     "features": [
-      "Chat de IA para modelos de IA poderosos",
       "Desenho com IA para transformar esboços em visuais cativantes",
       "Trocador de Rostos com IA para adicionar efeitos dinâmicos de troca de rostos",
-      "Gerador de Imagens com IA para possibilidades visuais infinitas",
       "Redator de IA para aumentar seu marketing e conteúdo de SEO",
       "Gerador de Vídeos com IA para vídeos rápidos de campanhas multiplataforma",
       "Criador de Logotipo para logotipos gerados por IA e kits de marca",
-      "Criador de Design fornece conteúdo visual impressionante com modelos dinâmicos",
-      "Conversor de Texto para Fala transforma texto em vozes com som natural",
+      "Transforma texto em vozes com som natural",
       "Correspondência de Cores",
       "Criador de Gráficos",
       "Pareamento de Fontes",
@@ -3019,8 +2925,7 @@ export const tools = [
     ],
     "tags": [
       "Design",
-      "Marketing",
-      "IA"
+      "Marketing"
     ],
     "language": [
       "EN"
@@ -3043,8 +2948,7 @@ export const tools = [
     ],
     "tags": [
       "Infográficos",
-      "Visualização",
-      "IA"
+      "Visualização"
     ],
     "language": [
       "Multilíngue"
@@ -3138,7 +3042,6 @@ export const tools = [
       "Análise de pontuação de viralidade."
     ],
     "tags": [
-      "IA",
       "Vídeo",
       "Clipes Curtos",
       "Redes Sociais",
@@ -3155,7 +3058,7 @@ export const tools = [
     "description": "Ferramenta de IA multimodal que permite clipes de qualquer momento de qualquer vídeo usando pistas visuais, de áudio e de sentimento.",
     "category": "🎥 Vídeo",
     "license": "Gratuito e Pago",
-    "usability": 0,
+    "usability": 4,
     "features": [
       "Análise avançada de vídeo",
       "Clipping de vídeo personalizável",
@@ -3164,7 +3067,6 @@ export const tools = [
       "Suporte a diversos tipos de vídeo."
     ],
     "tags": [
-      "IA",
       "Vídeo",
       "Clipping",
       "Redes Sociais",
@@ -3215,7 +3117,7 @@ export const tools = [
     "description": "Plataforma de design com IA para criação e edição de gráficos digitais, incluindo vetores, ilustrações e gráficos 3D.",
     "category": "🎨 Design",
     "license": "Gratuito e Pago",
-    "usability": 0,
+    "usability": 3,
     "features": [
       "Geração de imagens a partir de texto",
       "Editor de vetores",
@@ -3225,7 +3127,6 @@ export const tools = [
     ],
     "tags": [
       "Design",
-      "IA",
       "Imagens",
       "Edição"
     ],
@@ -3252,11 +3153,10 @@ export const tools = [
     "tags": [
       "Escrita",
       "Revisão",
-      "IA",
       "Português"
     ],
     "language": [
-      "PT"
+      "Multilíngue"
     ],
     "link": "https://clarice.ai/",
     "icon": "https://media.licdn.com/dms/image/v2/C560BAQHEkBOwlMdkfQ/company-logo_200_200/company-logo_200_200/0/1630651474425/clarice_ai_logo?e=2147483647&v=beta&t=PzVZR3wqAeW5mujs3LrnUp11h_5XeUI3LdROG0vbajE"
@@ -3266,7 +3166,7 @@ export const tools = [
     "description": "Assistente de pesquisa e escrita com IA desenvolvido pelo Google, projetado para ajudar na compreensão e exploração de materiais complexos, permitindo a organização de informações e geração de insights a partir de documentos pessoais.",
     "category": "📚 Educação",
     "license": "Gratuito",
-    "usability": 0,
+    "usability": 4,
     "features": [
       "Resumo automático de documentos",
       "Geração de guias de estudo e FAQs",
@@ -3279,7 +3179,6 @@ export const tools = [
     "tags": [
       "Pesquisa",
       "Escrita",
-      "IA",
       "Educação"
     ],
     "language": [

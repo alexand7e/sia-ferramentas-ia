@@ -21,6 +21,7 @@ body {
     gap: 10px;
     justify-content: center;
     margin-bottom: 30px;
+    position: relative; /* Define o contêiner principal como referência */
 }
 
 .category-filter {
@@ -33,29 +34,18 @@ body {
     transition: all 0.2s;
 }
 
-
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-
 .category-filter:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
+    background: #e3f2fd;
 }
 
-.filter-content {
-    display: none; /* Inicialmente oculto */
-    margin-top: 10px;
+.filter-container {
+    position: relative; /* Define cada contêiner de filtro como referência */
 }
-
 
 .filter-toggle {
     padding: 8px 16px;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 14px;
     cursor: pointer;
     border: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -69,27 +59,69 @@ body {
 
 .filter-content {
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 100%; /* Aparece logo abaixo do botão */
+    left: 0;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    display: none;
+    display: none; /* Inicialmente oculto */
     z-index: 1;
     min-width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-container.active .filter-content {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    display: block;
+    display: block; /* Exibe o conteúdo do filtro quando ativo */
 }
 
-.category-filter:hover {
-    background: #e3f2fd;
+.filter-content li {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
+
+.filter-content li:hover {
+    background-color: #e3f2fd;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usability {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.usability::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Ajusta a posição acima do elemento */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 0.85em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 10;
+}
+
+.usability:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .selected {
     background-color: #007bff; /* Cor para marcar o botão */
