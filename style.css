@@ -162,8 +162,8 @@ body {
     bottom: 125%; /* Ajusta a posição acima do elemento */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
+    background-color: #fbf0f0;
+    color: #4b1212;
     padding: 8px;
     border-radius: 4px;
     white-space: nowrap;

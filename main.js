@@ -1,6 +1,7 @@
 import { tools } from './tools.js';
 
 function renderTools(toolsArray) {
+    toolsArray.sort((a, b) => a.name.localeCompare(b.name));
     const grid = document.querySelector('.grid');
     grid.innerHTML = ''; 
   
@@ -14,7 +15,7 @@ function renderTools(toolsArray) {
                 <h2>${tool.name}</h2>
             </div>
             <p class="description">${tool.description}</p>
-            <div class="usability" data-tooltip="Nota para acessibilidade: ${tool.usability}">
+            <div class="usability" data-tooltip="Usabilidade: ${tool.usability}">
             ${renderusability(tool.usability)}
             </div>
             <div class="license ${tool.license.replace(/\s+|\(|\)/g, '-').toLowerCase()}">
@@ -38,25 +39,25 @@ function renderTools(toolsArray) {
   }
   
 // Variável para armazenar a ordem original
-const originalToolsOrder = [...tools];
-let isSortedAZ = false; // Estado atual da ordenação
+// const originalToolsOrder = [...tools];
+// let isSortedAZ = false; // Estado atual da ordenação
 
-function toggleSortOrder() {
-    const sortButton = document.getElementById("sort-button");
+// function toggleSortOrder() {
+//     const sortButton = document.getElementById("sort-button");
 
-    if (isSortedAZ) {
-        renderTools(originalToolsOrder);
-        sortButton.textContent = "Ordenar";
-    } else {
-        const sortedTools = [...tools].sort((a, b) => a.name.localeCompare(b.name));
-        renderTools(sortedTools);
-        sortButton.textContent = "Ordenar";
-    }
+//     if (isSortedAZ) {
+//         renderTools(originalToolsOrder);
+//         sortButton.textContent = "Ordenar";
+//     } else {
+//         const sortedTools = [...tools].sort((a, b) => a.name.localeCompare(b.name));
+//         renderTools(sortedTools);
+//         sortButton.textContent = "Ordenar";
+//     }
 
-    isSortedAZ = !isSortedAZ; // Alterna o estado de ordenação
-}
+//     isSortedAZ = !isSortedAZ; // Alterna o estado de ordenação
+// }
 
-document.getElementById("sort-button").addEventListener("click", toggleSortOrder);
+// document.getElementById("sort-button").addEventListener("click", toggleSortOrder);
 
 function renderusability(level) {
   let dots = '';
@@ -191,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Fecha o filtro quando o usuário clica fora
     document.addEventListener("click", function(event) {
         document.querySelectorAll(".filter-container.active").forEach(activeContainer => {
             if (!activeContainer.contains(event.target)) {

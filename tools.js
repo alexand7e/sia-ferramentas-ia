@@ -89,7 +89,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.listenmonster.com/",
+    "link": "https://listenmonster.com/",
     "icon": "https://cdn-1.webcatalog.io/catalog/listen-monster/listen-monster-icon-filled-256.png?v=1722863198701"
   },
   {
@@ -250,7 +250,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://firefly.adobe.com/inspire/images?ff_channel=adobe_com&ff_campaign=ffly_homepage&ff_source=firefly_seo",
+    "link": "https://www.adobe.com/br/products/firefly.html",
     "icon": "https://firefly.adobe.com/imgs/firefly_appicon_mobile.2c11f10a.svg"
   },
   {
@@ -762,8 +762,8 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://creativedestructionlab.com/wp-content/uploads/2018/07/marketmusse.jpg",
-    "icon": "https://media.licdn.com/dms/image/v2/C4D0BAQEHWIaFY1KgJg/company-logo_200_200/company-logo_200_200/0/1630536114717/marketmuse_logo?e=2147483647&v=beta&t=y22shpfu8SdJnre50b0bNKjAKT-h_7E4S-TUCpnER64"
+    "link": "https://www.marketmuse.com/",
+    "icon": "https://juliety.com/wpcontent/uploads/2023/05/marketmuse-logo.png\n\n"
   },
   {
     "name": "Anyword",
@@ -812,26 +812,6 @@ export const tools = [
     ],
     "link": "https://www.copysmith.ai",
     "icon": "https://storage.googleapis.com/hootsuite-assets/app-directory-logo.svg"
-  },
-  {
-    "name": "Storydoc",
-    "description": "Criação de apresentações interativas voltada para marketing",
-    "category": "📝 Conteúdo",
-    "license": "Pago (teste gratuito)",
-    "usability": 4,
-    "features": [
-      "Apresentações interativas",
-      "Monitoramento de engajamento",
-      "Templates personalizáveis",
-      "Análise de comportamento",
-      "Integração com CRM"
-    ],
-    "tags": [],
-    "language": [
-      "EN"
-    ],
-    "link": "https://www.storydoc.com",
-    "icon": "https://cdn-1.webcatalog.io/catalog/storydoc/storydoc-icon-filled-256.webp?v=1714782151738"
   },
   {
     "name": "Replica Studios",
@@ -1004,8 +984,8 @@ export const tools = [
     "name": "DALL-E",
     "description": "Geração de imagens a partir de descrições textuais",
     "category": "🎨 Design",
-    "license": "Pago",
-    "usability": 3,
+    "license": "Gratuito",
+    "usability": 4,
     "features": [
       "Gera imagens a partir de prompts de texto",
       "Cria arte em vários estilos",
@@ -1102,7 +1082,10 @@ export const tools = [
       "Melhora a qualidade da foto",
       "Compartilhamento fácil de animações"
     ],
-    "tags": [],
+    "tags": [
+      "Imagens",
+      "Animação facial"
+    ],
     "language": [
       "EN"
     ],
@@ -1170,7 +1153,11 @@ export const tools = [
       "Integração com CRM HubSpot",
       "Insights sobre público-alvo"
     ],
-    "tags": [],
+    "tags": [
+      "Automação",
+      "Planejamento",
+      "Análise"
+    ],
     "language": [
       "EN"
     ],
@@ -1354,7 +1341,10 @@ export const tools = [
       "Expansão de vocabulário",
       "Correção gramatical"
     ],
-    "tags": [],
+    "tags": [
+      "Reescrita",
+      "revisão de texto"
+    ],
     "language": [
       "EN",
       "PT"
@@ -1445,7 +1435,11 @@ export const tools = [
       "Suporte a múltiplas disciplinas",
       "Feedback imediato"
     ],
-    "tags": [],
+    "tags": [
+      "Tutoria",
+      "educação",
+      "SEO"
+    ],
     "language": [
       "EN"
     ],
@@ -1493,7 +1487,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.yippity.com",
+    "link": "https://yippity.io/",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlT6NIFMvTVC20WQj9RviUrsFpGgQrNoUiHkk1OPfjYFQfmSe7FVQuJebsEsJgiqqX2I&usqp=CAU"
   },
   {
@@ -1515,7 +1509,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.symbmath.com",
+    "link": "https://pt.symbolab.com/",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrhnmm_O21xFtA4BeMveRUgE_uz1r_HrPYhE-agFdeJqzJOpsudBqv1v_eD3BJpf6YZC0&usqp=CAU"
   },
   {
@@ -1608,7 +1602,7 @@ export const tools = [
     "language": [
       "PT"
     ],
-    "link": "https://hellothinkster.com/",
+    "link": "https://www.jogg.ai/",
     "icon": "https://res.jogg.ai/sub-module/static-file/71e8c708db37"
   },
   {
@@ -1750,7 +1744,7 @@ export const tools = [
     "language": [
       "PT"
     ],
-    "link": "https://maricata.com",
+    "link": "https://maricata.ai",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSosl2tXbr48UhYwDHeao5ISoU0zZ4HQmTB1hVtrpi5OnPjhRsruNwUfbO3iCHQiDF36E&usqp=CAU"
   },
   {
@@ -1822,7 +1816,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://www.meta.ai",
-    "icon": "https://images.indianexpress.com/2024/06/meta-ai.jpg?w=414"
+    "icon": "https://aimode.co/wp-content/uploads/2024/07/meta-ai-logo.webp"
   },
   {
     "name": "Character.AI",
@@ -1897,30 +1891,6 @@ export const tools = [
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67AeU1RDy_8yCsc-sVYGYC9Mf34_m9LTOXQ&s"
   },
   {
-    "name": "Poe (Quora)",
-    "description": "Agregador de chatbots como ChatGPT e outros modelos, ideal para comparar respostas.",
-    "category": "🤖 Automação",
-    "license": "Gratuito",
-    "usability": 3,
-    "features": [
-      "Comparação de respostas de múltiplos chatbots",
-      "Agregação de diferentes IA",
-      "Interação com modelos variados",
-      "Busca de respostas otimizadas",
-      "Integração com Quora"
-    ],
-    "tags": [
-      "Agregador",
-      "Chatbot",
-      "Comparação"
-    ],
-    "language": [
-      "EN"
-    ],
-    "link": "https://poe.com",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFlQNFuMRKkdsw6EL9jTMhoecYeEayvFvNA&s"
-  },
-  {
     "name": "Chatsonic",
     "description": "Oferece recursos adicionais como geração de imagens e integração com voz.",
     "category": "🤖 Automação",
@@ -1944,31 +1914,6 @@ export const tools = [
     ],
     "link": "https://chatsonic.com",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpuSv9qsXWQ7tvN9xvBJIiOyxc30fzAKGDw&s"
-  },
-  {
-    "name": "BlenderBot",
-    "description": "Desenvolvido pelo Facebook, foca em conversas de longo prazo.",
-    "category": "🤖 Automação",
-    "license": "Gratuito",
-    "usability": 4,
-    "features": [
-      "Conversas de longo prazo",
-      "Personalização de respostas",
-      "Interações contextuais",
-      "Integração com plataformas da Meta",
-      "Aprendizado contínuo"
-    ],
-    "tags": [
-      "Conversação",
-      "Longo Prazo",
-      "Meta",
-      "Chatbot"
-    ],
-    "language": [
-      "EN"
-    ],
-    "link": "https://ai.facebook.com/blenderbot",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoWNIVQLli9I7kdeOnzGNfyoQSIVbmBeZNw&s"
   },
   {
     "name": "Kuki AI",
@@ -2017,7 +1962,7 @@ export const tools = [
       "Multilíngue"
     ],
     "link": "https://gamma.app",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN01OFuXaJbc3vu8WQoUj0H5ln_koNgXnKw&s"
+    "icon": "https://www.wpcrafter.com/wp-content/uploads/2024/08/gamma-1.png"
   },
   {
     "name": "Perplexity",
@@ -2080,7 +2025,11 @@ export const tools = [
       "Monitoramento de ROI",
       "Relatórios personalizados"
     ],
-    "tags": [],
+    "tags": [
+      "Automação",
+      "Análise",
+      "Relatórios"
+    ],
     "language": [
       "EN"
     ],
@@ -2202,7 +2151,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.maxai.me/?ref=googlep1&ref=googleads-maxai-21137559754-&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595i5_FXlCR6oFsPh82c8hDrVyN0zuw5bn2elFB9s7e3bd9H5WqgX1ngaAoXnEALw_wcB",
+    "link": "https://www.maxai.me/",
     "icon": "https://store-images.s-microsoft.com/image/apps.32509.a11d5489-ba51-4ae7-8f9a-8d9bb1f75c51.626b396d-6ee9-4d42-a2fb-42d9f7d3fcb2.6cc3437e-de21-4347-a8e3-fe5d3eee1f64"
   },
   {
@@ -2660,7 +2609,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.velir.com/ideas/2024/10/16/meet-sitecore-stream-a-marketers-new-best-friend?utm_source=google&utm_medium=cpc&utm_campaign=search_partners_sitecore_stream&utm_id=21835534018&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595hOmLxFFLs-2WvppLEaCvkJ7uWQUiNL03EO8aTPUTCwE5R64i0ra44aAuRDEALw_wcB",
+    "link": "https://www.visily.ai/",
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNf2gmbxg9SpQZl01n_P7eOh3TT0prKC0ouCwoyD3uEHA9Ox0IY9WtOxdNl8nTXMG0jA&usqp=CAU"
   },
   {
@@ -2710,7 +2659,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://www.dzine.ai/?via=quocbao&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595i1LCEZVacYq2III6q3hJuLKdPvCscMcIVvA0uiD1jf5kaMInnLQiMaAkQ-EALw_wcB",
+    "link": "https://www.dzine.ai/",
     "icon": "https://miro.medium.com/v2/resize:fit:850/1*VgXJsbY74hrGd7umkTgn8Q.jpeg"
   },
   {
@@ -2738,7 +2687,7 @@ export const tools = [
       "EN"
     ],
     "link": "https://phygital.plus/",
-    "icon": "https://assets.softr-files.com/applications/fbfc865c-2f96-4d3b-af6c-8d2a9ee541a2/assets/bdef87d8-a25c-4a03-b46a-4080cc305bbf.png"
+    "icon": "https://pbs.twimg.com/profile_images/1550467552496721922/De_tYfk__400x400.jpg"
   },
   {
     "name": "Pictory",
@@ -2832,7 +2781,7 @@ export const tools = [
     "language": [
       "EN"
     ],
-    "link": "https://invideo.io/?irclickid=xzNyGmREyxyKUItTHmxFKzOqUkCTFGQoozUYX80&mpid=5806561&irgwc=1&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595idkMtI6_gful8CWK1OWMN7SXGaOLqaV2WJRzihhZ0zr22xGv4tvCkaAqsNEALw_wcB",
+    "link": "https://invideo.io/",
     "icon": "https://web-assets.invideo.io/common/prod/logos/invideo-ai-light.svg"
   },
   {
