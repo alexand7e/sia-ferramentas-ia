@@ -3,59 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA para Todos</title>
+    <title>Hub de Ferramentas - IA para Todos</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
-    <div class="header">
-        <h1>IA para todos - Ferramentas de Inteligência Artificial</h1>
-        <p>Uma listagem completa das melhores ferramentas de IA para resolução de tarefas</p>
-    </div>
+    <!-- Cabeçalho Principal (Título, Busca, Dropdowns) -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <h1>Hub de Ferramentas</h1>
+            <p>Explore e encontre as melhores ferramentas de Inteligência Artificial</p>
+        </div>
 
-    <div class="category-filters search-container">
-        <button id="search-button">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
+        <!-- Toolbar apenas para Busca e Filtros Dropdown -->
+        <div class="filters-toolbar" role="search">
+            <!-- Container da Busca -->
+            <div class="search-container">
+                <button id="search-button" aria-label="Abrir campo de busca" aria-expanded="false" aria-controls="search-input">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </button>
+                <input type="text" id="search-input" placeholder="Pesquisar ferramenta..." aria-label="Campo de busca de ferramentas" hidden>
+            </div>
+
+            <!-- Filtro Dropdown: Tipo de Licença -->
+            <div class="filter-container">
+                <button class="filter-toggle" aria-haspopup="listbox" aria-expanded="false" aria-controls="license-filter-list">
+                    Tipo de Licença
+                </button>
+                <ul id="license-filter-list" class="filter-content" role="listbox" aria-label="Filtros de Tipo de Licença" hidden>
+                    <li role="option" tabindex="-1" data-filter-type="license" data-filter-value="Todos">Mostrar Todos</li>
+                    <li role="option" tabindex="-1" data-filter-type="license" data-filter-value="Gratuito">Gratuito</li>
+                    <li role="option" tabindex="-1" data-filter-type="license" data-filter-value="Gratuito e Pago">Gratuito e Pago</li>
+                    <li role="option" tabindex="-1" data-filter-type="license" data-filter-value="Pago">Pago</li>
+                    <li role="option" tabindex="-1" data-filter-type="license" data-filter-value="Pago (teste gratuito)">Pago (teste gratuito)</li>
+                </ul>
+            </div>
+
+            <!-- Filtro Dropdown: Linguagem -->
+            <div class="filter-container">
+                <button class="filter-toggle" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-filter-list">
+                    Linguagem
+                </button>
+                <ul id="language-filter-list" class="filter-content" role="listbox" aria-label="Filtros de Linguagem" hidden>
+                     <li role="option" tabindex="-1" data-filter-type="language" data-filter-value="Todos">Mostrar Todos</li>
+                    <li role="option" tabindex="-1" data-filter-type="language" data-filter-value="PT">Português (PT)</li>
+                    <li role="option" tabindex="-1" data-filter-type="language" data-filter-value="EN">Inglês (EN)</li>
+                    <li role="option" tabindex="-1" data-filter-type="language" data-filter-value="Multilíngue">Multilíngue</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Filtros por Categoria (Tags Retráteis) -->
+    <section class="category-tag-filter-section" aria-labelledby="category-filter-heading">
+        <button id="toggle-categories" aria-expanded="false" aria-controls="category-buttons-container">
+            <span id="category-filter-heading">Filtrar por Categoria</span>
+            <span class="toggle-icon" aria-hidden="true">▼</span>
         </button>
-        <input type="text" id="search-input" placeholder="Pesquisar">
-    
-        <button class="category-filter">🎨 Design</button>
-        <button class="category-filter">📝 Conteúdo</button>
-        <button class="category-filter">🎥 Vídeo</button>
-        <button class="category-filter">🔍 Análise</button>
-        <button class="category-filter">💬 Comunicação</button>
-    
-        <div class="filter-container">
-            <button class="filter-toggle">🔒 Tipo de Licença</button>
-            <ul class="filter-content">
-                <li class="category-filter">Gratuito</li>
-                <li class="category-filter">Gratuito e Pago</li>
-                <li class="category-filter">Pago</li>
-                <li class="category-filter">Pago (teste gratuito)</li>
-            </ul>
+        <!-- Container onde os botões/tags de categoria serão injetados pelo JS -->
+        <div id="category-buttons-container" role="group" aria-labelledby="category-filter-heading">
+            <!-- Tags de categoria aqui -->
         </div>
-    
-        <div class="filter-container">
-            <button class="filter-toggle">🌐 Linguagem</button>
-            <ul class="filter-content">
-                <li class="category-filter">PT</li>
-                <li class="category-filter">EN</li>
-                <li class="category-filter">Multilíngue</li>
-            </ul>
-        </div>
-        <!-- <button id="sort-button">Ordenar</button> -->
-    </div>
-    
-    
-    <div class="grid">
-        <!-- Ferramentas serão geradas aqui pelo JavaScript -->
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Secretaria de Inteligência Artificial do Piauí - SIA. Todos os direitos reservados.</p>
+    <!-- Conteúdo Principal (Grid de Ferramentas) -->
+    <main role="main">
+        <h2 class="sr-only" id="tool-grid-heading">Lista de Ferramentas de IA</h2>
+        <div class="grid" aria-labelledby="tool-grid-heading">
+            <!-- Cards aqui -->
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <p>© 2024 Secretaria de Inteligência Artificial do Piauí - SIA. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Script Principal (Módulo) -->
     <script type="module" src="main.js"></script>
+
+    <!-- CSS Utilitário (pode ir para style.css) -->
+    <style>
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+    </style>
 </body>
 </html>

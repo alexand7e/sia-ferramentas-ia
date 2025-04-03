@@ -1,432 +1,477 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f5f5f5;
+/* Reset básico e configurações globais */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #F4F4F4; /* Cor de fundo principal (cinza claro) */
+    color: #343a40;
+    line-height: 1.6;
+}
+
+/* Estilo de foco visível para acessibilidade */
+:focus-visible {
+    outline: 3px solid #034EA2; /* Azul primário */
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(3, 78, 162, 0.25); /* Sombra com base no azul */
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Cabeçalho Principal (Título, Busca, Filtros Dropdown) */
 .header {
     text-align: center;
-    padding: 40px 20px;
-    background: #fff;
+    padding: 30px 20px 25px 20px; /* Ajuste padding */
+    background: #FFFFFF; /* Fundo branco */
     border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Reduzida margem inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Sombra sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre título e filtros */
 }
 
-.category-filters {
+.header-content {
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    color: #212529;
+    margin-bottom: 8px;
+    font-size: 2.2em;
+}
+
+.header p {
+    color: #6c757d;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Toolbar apenas para Busca e Filtros Dropdown (dentro do header) */
+.filters-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* Container da Busca */
+.search-container { display: flex; align-items: center; gap: 5px; }
+#search-button {
+    background: none; border: none; cursor: pointer; padding: 8px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; color: #034EA2; /* Azul primário */
+}
+#search-button .icon { width: 22px; height: 22px; transition: color 0.2s; }
+#search-button:hover .icon { color: #02306b; } /* Azul mais escuro */
+#search-input {
+    display: none; padding: 8px 16px; width: 0;
+    border: 1px solid #E7E7E7; /* Cinza médio para borda */
+    border-radius: 20px; transition: width 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    opacity: 0; font-size: 0.9em; background-color: #F4F4F4; /* Fundo cinza claro */
+}
+#search-input:focus {
+     border-color: #034EA2; /* Destaque azul no foco */
+     box-shadow: 0 0 0 0.2rem rgba(3, 78, 162, 0.25);
+     background-color: #FFFFFF; /* Fundo branco no foco */
+}
+.search-container.active #search-input { display: block; width: 220px; opacity: 1; padding: 8px 16px; }
+
+/* Filtros Dropdown (Licença, Linguagem) */
+.filter-container { position: relative; }
+.filter-toggle { /* Botão que abre o dropdown */
+    padding: 8px 18px;
+    background: #E7E7E7; /* Cinza médio */
+    color: #343a40;
+    border-radius: 20px; cursor: pointer; border: none;
+    transition: all 0.2s ease-in-out; font-size: 0.9em; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 6px;
+}
+.filter-toggle:hover { background: #d8d8d8; } /* Escurece um pouco */
+.filter-toggle::after { /* Seta */
+    content: '▼'; font-size: 0.6em; display: inline-block;
+    transition: transform 0.2s ease-in-out; margin-left: 4px;
+}
+.filter-container.active .filter-toggle { background: #d8d8d8; } /* Mantém cor de hover quando ativo */
+.filter-container.active .filter-toggle::after { transform: rotate(180deg); }
+
+.filter-content { /* Conteúdo do Dropdown */
+    position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%);
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 8px; display: none; z-index: 10; min-width: 200px;
+    list-style-type: none; border: 1px solid #E7E7E7; /* Borda cinza */
+}
+.filter-container.active .filter-content { display: block; }
+.filter-content li { /* Itens do Dropdown */
+    padding: 10px 15px; cursor: pointer; transition: background-color 0.15s, color 0.15s;
+    border-radius: 6px; margin-bottom: 2px; font-size: 0.88em; color: #495057;
+}
+.filter-content li:last-child { margin-bottom: 0; }
+.filter-content li:hover { background-color: #F4F4F4; } /* Hover cinza claro */
+/* Item selecionado no dropdown */
+.filter-content li.selected {
+    background-color: #034EA2; /* Azul primário */
+    color: white; font-weight: bold;
+}
+.filter-content li.selected:hover { background-color: #02306b; } /* Azul escuro no hover */
+
+
+/* --- Seção de Filtros por Categoria (Tags Retráteis) --- */
+.category-tag-filter-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #FFFFFF; /* Fundo branco para destacar */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#toggle-categories {
+    background: none;
+    border: none;
+    color: #034EA2; /* Azul primário */
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 0;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggle-categories .toggle-icon {
+    font-size: 0.8em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-tag-filter-section.active #toggle-categories .toggle-icon {
+    transform: rotate(180deg);
+}
+
+#category-buttons-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-    margin-bottom: 30px;
-    position: relative; 
-}
-
-.category-filter {
-    padding: 8px 16px;
-    background: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.2s;
-}
-
-/* Estilo para itens de filtro (não selecionados) */
-.filter-content li {
-    padding: 8px 16px;
-    background: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s;
-    margin-bottom: 5px;
-    color: #333;
-    font-size: 0.85em;
-}
-
-/* Estilo para o item de filtro ao passar o mouse */
-.filter-content li:hover {
-    background: #e3f2fd;
-}
-
-/* Estilo para o item selecionado */
-.filter-content li.selected {
-    background-color: #007bff; /* Cor de fundo destacada */
-    color: white; /* Cor do texto branco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
-    font-weight: bold; /* Texto em negrito */
-    font-size: 0.85em;
-}
-
-
-.filter-content {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.selected {
-    background-color: #007bff;
-    color: white;
-}
-
-#sort-button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 10px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.2s;
-}
-
-#sort-button:hover {
-    background-color: #0056b3;
-}
-
-
-.category-filter:hover {
-    background: #e3f2fd;
-}
-
-.filter-container {
-    position: relative; /* Define cada contêiner de filtro como referência */
-}
-
-.filter-toggle {
-    padding: 8px 16px;
-    background: #fff;
-    border-radius: 14px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.2s;
-}
-
-.filter-toggle:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
-}
-
-.filter-content {
-    position: absolute;
-    top: 100%; /* Aparece logo abaixo do botão */
-    left: 0;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    display: none; /* Inicialmente oculto */
-    z-index: 1;
-    min-width: 150px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.filter-container.active .filter-content {
-    display: block; /* Exibe o conteúdo do filtro quando ativo */
-}
-
-.filter-content li {
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.filter-content li:hover {
-    background-color: #e3f2fd;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.usability {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.usability::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 125%; /* Ajusta a posição acima do elemento */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fbf0f0;
-    color: #4b1212;
-    padding: 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    font-size: 0.85em;
+    margin-top: 15px;
+    /* Estilos para retração */
+    max-height: 0;
+    overflow: hidden;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-    z-index: 10;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out 0.1s, margin-top 0.3s ease-in-out;
 }
 
-.usability:hover::after {
+.category-tag-filter-section.active #category-buttons-container {
+    max-height: 1000px; /* Valor alto para permitir conteúdo */
     opacity: 1;
-    visibility: visible;
+}
+
+/* Estilo das Tags de Categoria */
+#category-buttons-container .category-filter {
+    padding: 6px 14px;
+    background: #f1f3f5;
+    color: #495057;
+    border: 1px solid #d3d3d3;
+    border-radius: 18px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+#category-buttons-container .category-filter:hover {
+    background: #dee2e6;
+    color: #212529;
+    border-color: #adb5bd;
+}
+
+/* Tag de Categoria Selecionada */
+#category-buttons-container .category-filter.selected {
+    background-color: #034EA2; /* Azul primário */
+    color: white;
+    border-color: #02306b; /* Borda azul escura */
+}
+/* Estilo especial para o botão "Todas" selecionado */
+#category-buttons-container .category-filter[data-filter-value="Todos"].selected {
+     background-color: #034EA2;
+     color: white;
+     border-color: #02306b;
 }
 
 
+/* Grid e Cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); /* Ajuste leve */
+    gap: 20px; /* Espaço entre cards */
 }
 
 .card {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    transition: transform 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #FFFFFF; /* Fundo branco */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E7E7E7; /* Borda cinza médio */
+    min-height: 200px; /* Altura mínima para consistência inicial */
 }
 
+/* Efeito Hover no Card - Revela Detalhes */
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #d8d8d8; /* Borda levemente mais escura no hover */
 }
-
-.card-header {
-    display: flex;
-    align-items: center;
+.card:hover .features-list,
+.card:hover .tags {
+    display: flex; /* Ou block para a lista */
+    opacity: 1;
+    max-height: 500px;
+    margin-top: 15px;
     margin-bottom: 15px;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out 0.1s, max-height 0.4s ease-in-out, margin-top 0.3s ease-in-out;
 }
 
-.icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-    color: #1976d2;
+.card-header { display: flex; align-items: flex-start; margin-bottom: 12px; gap: 15px; }
+.card-header-content { flex-grow: 1; }
+.tool-icon { width: 38px; height: 38px; color: #034EA2; flex-shrink: 0; border-radius: 4px; /* Borda suave no ícone */ }
+
+/* Botão Favoritar */
+/* Botão Favoritar: agora no canto superior esquerdo */
+/* Ajuste do botão Favorito para evitar sobreposição */
+/* Botão Favoritar: ao lado direito da tag de licença */
+.favorite-button {
+    position: absolute;
+    top: 7px; /* Alinhado com a tag de licença */
+    right: -1px; /* Ajuste para ficar próximo à tag de licença */
+    z-index: 2;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #adb5bd;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.usability {
-    display: flex;
-    gap: 5px;
-    margin: 10px 0;
+.favorite-button:hover {
+    color: #868e96;
+    transform: scale(1.15);
 }
 
-/* .usability {
-    font-weight: bold;
-    color: #4CAF50;
-    margin-top: 10px;
-    font-size: 0.9em;
-    display: flex;
-    gap: 4px;
-} 
-*/
-
-.card {
-    position: relative;
+.favorite-button.favorited {
+    color: #ffc107;
+}
+.favorite-button.favorited:hover {
+    color: #e0a800;
+    transform: scale(1.1);
 }
 
-.card:hover .license {
-    opacity: 0.9;
+.favorite-button svg {
+    width: 22px;
+    height: 22px;
+    display: block;
 }
 
+/* Badge de Licença - refinada */
 .license {
     position: absolute;
-    top: 17px;
-    right: 17px;
-    display: inline-block;
-    padding: 6px 10px;
+    top: 10px;
+    right: 29px;
+    padding: 5px 10px;
     border-radius: 10px;
-    font-size: 0.75em;
-    color: #ffffff;
-    font-weight: bold;
-    opacity: 0.8;
+    font-size: 0.62em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .license.gratuito {
-    background-color: #45ab48; /* Verde claro para "gratuito" */
+    background-color: #28a745;
 }
 
 .license.gratuito-e-pago {
-    background-color: #d6c43d; /* Verde mais escuro para "gratuito e pago" */
+    background-color: #ffc107;
+    color: #212529;
 }
 
 .license.pago {
-    background-color: #e25a30; /* Laranja mais claro para "pago" */
+    background-color: #fd5c63;
 }
 
-.license.pago--teste-gratuito- {
-    background-color: #d6c43d; 
+.license.pago-teste-gratuito- {
+    background-color: #ff9800;
 }
 
-.languages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    position: absolute;
-    bottom: 17px;
-    right: 17px;
-}
+/* Licença e Idiomas */
 
-.language {
-    background-color: #4CAF50; 
-    color: #dfeaf5;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 0.8em;
-    display: inline-block;
-    opacity: 0.8;
-}
+.favorite-button:hover { color: #868e96; transform: scale(1.15); }
+.favorite-button.favorited { color: #ffc107; } /* Amarelo para favorito */
+.favorite-button.favorited:hover { color: #e0a800; transform: scale(1.1); }
+.favorite-button svg { width: 22px; height: 22px; display: block; }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #e0e0e0;
-}
+h2 { color: #212529; margin: 0 0 4px 0; font-size: 1.2em; font-weight: 600; }
+.description { color: #495057; margin: 0 0 10px 0; font-size: 0.95em; line-height: 1.5; flex-grow: 1; }
 
-.dot.filled {
-    background: #4CAF50;
+/* Usabilidade (Pontos) */
+.usability { display: flex; gap: 4px; margin-bottom: 10px; position: relative; cursor: default; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #E7E7E7; } /* Ponto cinza */
+.dot.filled { background: #0d6efd; } /* Azul mais amigável */
+.usability .tooltip-text { /* Tooltip */
+    position: absolute; bottom: 135%; left: 50%; transform: translateX(-50%);
+    background-color: #212529; color: #fff; padding: 5px 8px; border-radius: 4px;
+    white-space: nowrap; font-size: 0.75em; opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s; z-index: 10; pointer-events: none;
 }
+.usability:hover .tooltip-text { opacity: 1; visibility: visible; }
 
+/* Lista de Features (Inicialmente Oculta) */
+/* Lista de Features (Inicialmente Oculta, Layout Flex) */
 .features-list {
     list-style-type: none;
     padding: 0;
-    margin: 15px 0;
+    margin: 0; /* Mantenha 0 inicial */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    /* Adiciona Flexbox para layout em linha */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se necessário */
+    gap: 5px 15px; /* Espaçamento vertical e horizontal entre itens */
+    /* Transições são aplicadas no hover do card (mantido) */
 }
 
 .features-list li {
-    margin: 8px 0;
-    padding-left: 20px;
-    position: relative;
+    /* Remove margem vertical e padding-left */
+    margin: 0;
+    padding: 0;
+    /* position: relative; // Não mais necessário se não usar ::before */
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #495057;
+    /* Adiciona um separador após cada item, exceto o último */
+    display: inline-flex; /* Para alinhar com o separador */
+    align-items: center;
 }
 
-.features-list li:before {
+.features-list li:not(:last-child)::after {
     content: "•";
-    color: #1976d2;
-    position: absolute;
-    left: 0;
+    color: #adb5bd; /* Cor mais suave para o separador */
+    margin-left: 10px; /* Espaço após o texto do item */
+    font-size: 0.8em; /* Tamanho menor para o separador */
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 15px 0;
-}
+/* Remove a regra ::before original */
+/* .features-list li::before { ... } */
 
+/* Tags (Inicialmente Ocultas) */
+.tags { display: none; flex-wrap: wrap; gap: 6px; margin: 0; opacity: 0; max-height: 0; overflow: hidden; }
 .tag {
     display: inline-block;
-    padding: 4px 12px;
-    background: #e3f2fd;
-    color: #1976d2;
-    border-radius: 15px;
-    font-size: 0.8em;
+    padding: 4px 10px;
+    background: #e9f3ff;
+    color: #0056b3;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: 500;
 }
 
-h1 {
-    color: #1a237e;
-    margin-bottom: 10px;
+
+.languages { position: absolute; bottom: 12px; right: 12px; display: flex; flex-wrap: wrap; gap: 5px; z-index: 1; }
+.language {
+    background-color: #6c757d; /* Cinza */ color: #ffffff; padding: 3px 7px;
+    border-radius: 4px; font-size: 0.7em; display: inline-block; opacity: 0.9; font-weight: 500;
 }
 
-h2 {
-    color: #333;
-    margin: 0;
-    font-size: 1.3em;
-}
-
-.description {
-    color: #666;
-    margin: 10px 0;
-}
-
+/* Link "Acessar Ferramenta" */
 .link {
-    color: #1976d2;
-    text-decoration: none;
-    margin-top: 15px;
-    display: inline-block;
-    padding: 8px 16px;
-    background: #e3f2fd;
-    border-radius: 20px;
-    transition: all 0.2s;
+    color: #034EA2; text-decoration: none; margin-top: auto; padding: 9px 16px;
+    background: #e7f1ff; /* Azul bem claro */ border-radius: 18px; transition: all 0.2s;
+    display: inline-block; align-self: flex-start; font-weight: 500; font-size: 0.9em;
+    border: 1px solid transparent;
 }
-
 .link:hover {
-    background: #1976d2;
+    background: #034EA2;
     color: white;
+    border-color: #034EA2;
+    box-shadow: 0 2px 5px rgba(3, 78, 162, 0.3);
 }
 
+/* Rodapé */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    margin-top: 30px;
-    color: #666;
-    font-size: 0.9em;
+    text-align: center; padding: 25px; background: #FFFFFF; /* Fundo branco */
+    border-top: 1px solid #E7E7E7; margin-top: 40px; color: #6c757d;
+    font-size: 0.9em; border-radius: 0 0 12px 12px;
+}
+footer p { margin: 0; }
+
+/* Classe Utilitária */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+/* --- Media Queries --- */
+/* Telas Médias (Tablets) */
+@media (max-width: 992px) {
+    body { max-width: 960px; }
+    .header h1 { font-size: 2em; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 }
 
-footer p {
-    margin: 0;
+/* Telas Pequenas (Celulares Maiores) */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .header { padding: 20px 15px; gap: 15px; }
+    .header h1 { font-size: 1.8em; }
+    .header p { font-size: 0.95em; }
+    .filters-toolbar { gap: 10px; }
+    .filter-toggle { padding: 7px 14px; font-size: 0.85em; }
+    #search-input { font-size: 0.85em; }
+    .search-container.active #search-input { width: 180px; }
+    .category-tag-filter-section { padding: 10px; margin-bottom: 20px; }
+    #toggle-categories { font-size: 0.95em; }
+    #category-buttons-container .category-filter { padding: 5px 12px; font-size: 0.8em; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+    .card { padding: 15px; min-height: 180px; }
+    h2 { font-size: 1.1em; }
+    .description { font-size: 0.9em; }
+    .link { padding: 8px 14px; font-size: 0.85em; }
+    footer { font-size: 0.85em; padding: 20px; }
 }
 
-.tool-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+/* Telas Muito Pequenas (Celulares Menores) */
+@media (max-width: 576px) {
+    body { padding: 5px; }
+    .header { padding: 15px 10px; gap: 15px; }
+    .header h1 { font-size: 1.6em; }
+    .header p { display: none; }
+    .filters-toolbar { flex-direction: column; align-items: stretch; } /* Empilha busca e dropdowns */
+    .search-container { justify-content: center; width: 100%; }
+    .search-container.active #search-input { width: calc(100% - 50px); } /* Ajusta largura busca */
+    .filter-container { width: 100%; }
+    .filter-toggle { justify-content: center; }
+    .filter-content { min-width: 90%; left: 5%; transform: translateX(0); }
+    .category-tag-filter-section { padding: 10px; }
+    .grid { grid-template-columns: 1fr; gap: 10px; }
+    .card:hover { transform: none; box-shadow: 0 3px 8px rgba(0,0,0,0.07); }
+    .license, .languages { font-size: 0.65em; padding: 3px 6px; }
+    .tool-icon { width: 32px; height: 32px; }
 }
-
-/* Contêiner de Pesquisa */
-.search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 10px;
-}
-
-/* Estilo do Botão de Pesquisa (ícone) */
-#search-button {
-    background: none; /* Remove o fundo */
-    border: none;
-    cursor: pointer;
-    padding: 4px; /* Reduz o padding */
-}
-
-#search-button .icon {
-    width: 20px;
-    height: 20px;
-    color: #1976d2; /* Cor do ícone */
-    transition: color 0.2s;
-}
-
-#search-button:hover .icon {
-    color: #0d47a1; /* Escurece o ícone ao passar o mouse */
-}
-
-/* Estilo do Campo de Entrada (Caixa de Pesquisa) */
-#search-input {
-    display: none; /* Inicialmente escondido */
-    padding: 8px 16px;
-    width: 0;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    transition: width 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-    outline: none;
-    font-size: 0.9em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-container.active #search-input {
-    display: block;
-    width: 200px; /* Largura maior para a caixa de pesquisa */
-    opacity: 1;
-}
-
